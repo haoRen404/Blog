@@ -1,0 +1,21 @@
+@Aspect     定义一个切面，通常是一个类，里面可以定义切入点和通知
+@Component  @controller: controller控制器层（注入服务）
+@Pointcut   切面切入点
+@Before： 标识一个前置增强方法，相当于BeforeAdvice的功能.
+@After： final增强，不管是抛出异常或者正常退出都会执行
+@AfterReturning：  后置增强，似于AfterReturningAdvice, 方法正常退出时执行
+@ControllerAdvice 拦截异常并统一处理
+@ExceptionHandler：统一处理某一类异常
+@Entity // 这个注释标识这是一个实体类（已被废弃）
+@Table(name="t_blog")  // 类名和数据表名不一致时，用这个注释指出数据表
+@Id // 指定这是数据表的id
+@GeneratedValue // 提供了主键的生成策略
+@Basic 是实体类与数据库字段映射时最简单的类型
+@Lob 指定持久属性或字段应作为大对象持久保存到数据库支持的大对象类型。
+@Temporal 作用是帮Java的Date类型进行格式化
+@ManyToOne 设置实体关系，多对一
+@ManyToMany 设置实体关系，多对多
+@OneToMany 设置实体关系，一对多
+@Transient  // 标识是普通的属性，不进行数据库操作
+@Autowired 注入
+@Transactional 开启事务
