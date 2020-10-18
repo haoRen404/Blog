@@ -24,38 +24,45 @@ import javax.validation.Valid;
 public class TagController {
 
     @Autowired
-    private TagService tagService;
+    private TagService tagService;// jpa
 
+    // 分页显示标签
     @GetMapping("/tags")
-    public String tags(@PageableDefault(size = 3,sort = {"id"},direction = Sort.Direction.DESC)
+    public String tags(@PageableDefault(size = 6, sort = {"id"}, direction = Sort.Direction.DESC)
                                     Pageable pageable, Model model) {
-        model.addAttribute("page",tagService.listTag(pageable));
+        model.addAttribute("page",tagService.listTag(pageable));// 往浏览器传标签信息
         return "admin/tags";
     }
 
+    // 添加标签
     @GetMapping("/tags/input")
     public String input(Model model) {
-        model.addAttribute("tag", new Tag());
-        return "admin/tags-input";
+        model.addAttribute("tag", new Tag());// 新建标签对象，用来存储新创建的标签
+        return "admin/tags-input";// 跳转到标签编辑页面
     }
 
+    // 修改标签
     @GetMapping("/tags/{id}/input")
     public String editInput(@PathVariable Long id, Model model) {
-        model.addAttribute("tag", tagService.getTag(id));
+        model.addAttribute("tag", tagService.getTag(id));// 根据id获取到修改的标签
         return "admin/tags-input";
     }
 
 
+    // 添加标签的发布按钮
+    // BindingResult 作用：用于对前端穿进来的参数进行校验
     @PostMapping("/tags")
     public String post(@Valid Tag tag,BindingResult result, RedirectAttributes attributes) {
-        Tag tag1 = tagService.getTagByName(tag.getName());
+        Tag tag1 = tagService.getTagByName(tag.getName());// 根据标签名字查询标签
+
         if (tag1 != null) {
             result.rejectValue("name","nameError","不能添加重复的分类");
         }
-        if (result.hasErrors()) {
+        if (result.hasErrors()) {// 有错误（即标签存在），刷新标签编辑页面
             return "admin/tags-input";
         }
-        Tag t = tagService.saveTag(tag);
+
+        Tag t = tagService.saveTag(tag);// 添加标签
         if (t == null ) {
             attributes.addFlashAttribute("message", "新增失败");
         } else {
@@ -64,17 +71,19 @@ public class TagController {
         return "redirect:/admin/tags";
     }
 
-
+    // 修改标签的发布按钮
     @PostMapping("/tags/{id}")
     public String editPost(@Valid Tag tag, BindingResult result,@PathVariable Long id, RedirectAttributes attributes) {
-        Tag tag1 = tagService.getTagByName(tag.getName());
+        Tag tag1 = tagService.getTagByName(tag.getName());// 根据标签名字查询标签
+
         if (tag1 != null) {
             result.rejectValue("name","nameError","不能添加重复的分类");
         }
         if (result.hasErrors()) {
             return "admin/tags-input";
         }
-        Tag t = tagService.updateTag(id,tag);
+
+        Tag t = tagService.updateTag(id, tag);// 修改标签
         if (t == null ) {
             attributes.addFlashAttribute("message", "更新失败");
         } else {
@@ -83,8 +92,9 @@ public class TagController {
         return "redirect:/admin/tags";
     }
 
+    // 删除标签
     @GetMapping("/tags/{id}/delete")
-    public String delete(@PathVariable Long id,RedirectAttributes attributes) {
+    public String delete(@PathVariable Long id, RedirectAttributes attributes) {
         tagService.deleteTag(id);
         attributes.addFlashAttribute("message", "删除成功");
         return "redirect:/admin/tags";

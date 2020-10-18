@@ -197,7 +197,7 @@
       on : 'hover'
     });
 
-    //消息提示关闭初始化
+    // 消息提示框点叉叉关闭
     $('.message .close')
       .on('click', function () {
         $(this)
@@ -214,17 +214,21 @@
       })
     ;
 
+    // 切换分页时，局部刷新
     function page(obj) {
       $("[name='page']").val($(obj).data("page"));
       loaddata();
     }
 
+    // 点击搜索，进行局部刷新
     $("#search-btn").click(function () {
-      $("[name='page']").val(0);
+      $("[name='page']").val(0);// 修改为第一页
       loaddata();
     });
 
+    // 异步，局部刷新
     function loaddata() {
+      // 使用jquery的load()异步加载页面
       $("#table-container").load(/*[[@{/admin/blogs/search}]]*/"/admin/blogs/search",{
         title : $("[name='title']").val(),
         typeId : $("[name='typeId']").val(),

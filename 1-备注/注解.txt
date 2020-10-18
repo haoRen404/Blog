@@ -21,3 +21,4 @@
 @Transactional 开启事务
 @Controller 标记该类是控制器
 @RequestMapping 用来处理请求地址映射的注解
+@Valid 用于验证注解是否符合要求

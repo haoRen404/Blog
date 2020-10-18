@@ -58,54 +58,58 @@ public class BlogController {
 
     // 对分类和标签的框框初始化，把值赋进去
     private void setTypeAndTag(Model model) {
-        model.addAttribute("types", typeService.listType());
-        model.addAttribute("tags", tagService.listTag());
+        model.addAttribute("types", typeService.listType());// 分类列表
+        model.addAttribute("tags", tagService.listTag());// 标签列表
     }
 
-    // 跳转到新增
+    // 新增
     @GetMapping("/blogs/input")
     public String input(Model model) {
         setTypeAndTag(model);// 初始化，，把值赋进去
-        model.addAttribute("blog", new Blog()); // 新建博客对象，存储新增的博客
+        model.addAttribute("blog", new Blog()); // 新建博客对象，用来存储新增的博客内容
         return INPUT; // 跳转新增页面
     }
 
-    // 这才是新增，新增按钮
+    // 编辑
     @GetMapping("/blogs/{id}/input")
-    public String editInput(@PathVariable Long id, Model model) {// id是跳转到新增页面时新建的博客对象的id
-        setTypeAndTag(model);// 初始化，，把值赋进去
+    public String editInput(@PathVariable Long id, Model model) {// id是需要编辑的博客id
+        setTypeAndTag(model);// 初始化，把值赋进去
         Blog blog = blogService.getBlog(id);// 查询出指定id的博客
         blog.init();// 进行初始化
-        model.addAttribute("blog",blog);// 往前台传数据
+        model.addAttribute("blog",blog);// 往前台传数据，把博客相关的信息初始化到页面上
         return INPUT;
     }
 
 
-
+    // 发布
+    // RedirectAttributes：在页面重定向的时候传递参数，不使用session，使用RedirectAttributes
     @PostMapping("/blogs")
     public String post(Blog blog, RedirectAttributes attributes, HttpSession session) {
-        blog.setUser((User) session.getAttribute("user"));
-        blog.setType(typeService.getType(blog.getType().getId()));
-        blog.setTags(tagService.listTag(blog.getTagIds()));
+        // getAttribute()获取属性，获取用户
+        blog.setUser((User) session.getAttribute("user"));// 为博客设置用户
+        blog.setType(typeService.getType(blog.getType().getId()));// 为博客设置分类
+        blog.setTags(tagService.listTag(blog.getTagIds()));// 为博客设置标签
+
         Blog b;
-        if (blog.getId() == null) {
+        if (blog.getId() == null) {// 如果没有id，则说明没有改博客，发布即是添加博客
             b =  blogService.saveBlog(blog);
         } else {
-            b = blogService.updateBlog(blog.getId(), blog);
+            b = blogService.updateBlog(blog.getId(), blog);// 有id则说明博客已经存在，发布即是修改
         }
 
-        if (b == null ) {
-            attributes.addFlashAttribute("message", "操作失败");
+        if (b == null ) {// 没有返回值，则添加/修改失败
+            // addFlashAttribute 重定向时传输数据
+            attributes.addFlashAttribute("message", "添加/修改失败");
         } else {
-            attributes.addFlashAttribute("message", "操作成功");
+            attributes.addFlashAttribute("message", "添加/修改成功");
         }
         return REDIRECT_LIST;
     }
 
-
+    // 删除
     @GetMapping("/blogs/{id}/delete")
     public String delete(@PathVariable Long id,RedirectAttributes attributes) {
-        blogService.deleteBlog(id);
+        blogService.deleteBlog(id);// 删除
         attributes.addFlashAttribute("message", "删除成功");
         return REDIRECT_LIST;
     }

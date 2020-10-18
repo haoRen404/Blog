@@ -47,6 +47,7 @@
   <!--中间内容-->
   <div  class="m-container-small m-padded-tb-big">
     <div class="ui container">
+      <!--th:object替换对象，使用*{属性名}的方式取数据-->
       <form action="#" method="post"  th:object="${tag}" th:action="*{id}==null ? @{/admin/tags} : @{/admin/tags/{id}(id=*{id})} "  class="ui form">
         <input type="hidden" name="id" th:value="*{id}">
         <div class=" field">
@@ -66,6 +67,7 @@
         </div>
          /*/-->
         <div class="ui right aligned container">
+<!--          window.history.go(-1) 退回到上一个网页-->
           <button type="button" class="ui button" onclick="window.history.go(-1)" >返回</button>
           <button class="ui teal submit button">提交</button>
         </div>

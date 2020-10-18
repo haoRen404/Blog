@@ -46,7 +46,7 @@
         <h3 th:text="${session.user.nickname}">李朝阳，欢迎登录！</h3>
         <p>Hi,欢迎登陆</p>
       </div>
-
+<!--      首图-->
       <img src="https://hbimg.huabanimg.com/a3f8fd5e33d9aed81836922fcee4f4fc4d93f8067a39e-atpUdU_fw658/format/webp" alt="" class="ui rounded bordered fluid image">
     </div>
   </div>
@@ -96,6 +96,8 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
   <!--/*/</th:block>/*/-->
+
+
   <script>
     $('.menu.toggle').click(function () {
       $('.m-item').toggleClass('m-mobile-hide');
@@ -104,7 +106,6 @@
     $('.ui.dropdown').dropdown({
       on : 'hover'
     });
-
   </script>
 </body>
 </html>
