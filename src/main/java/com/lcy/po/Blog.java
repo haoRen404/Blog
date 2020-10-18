@@ -210,14 +210,17 @@ public class Blog {
         this.description = description;
     }
 
+
     // 初始化
     public void init() {
-        this.tagIds = tagsToIds(this.getTags());
+        this.tagIds = tagsToIds(this.getTags());// getTags()获取到标签列表，tagsToIds()将标签id拼接成字符串
     }
 
-
+    // 拼接标签id成字符串
     private String tagsToIds(List<Tag> tags) {
-        if (!tags.isEmpty()) {
+        // isEmpty()用来判断某容器中是否存在元素
+        if (!tags.isEmpty()) {// 如果标签不存在
+            // append是StringBuffer的方法，表示追加字符串
             StringBuffer ids = new StringBuffer();
             boolean flag = false;
             for (Tag tag : tags) {

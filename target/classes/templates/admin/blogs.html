@@ -10,6 +10,7 @@
 <body>
 
   <!--导航-->
+<!--  th:replace 模板-->
   <nav th:replace="admin/_fragments :: menu(1)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small" >
     <div class="ui container">
       <div class="ui inverted secondary stackable menu">
@@ -83,7 +84,10 @@
         </div>
       </div>
       <div id="table-container">
-        <table th:fragment="blogList" class="ui compact teal table">
+
+<!--        定义一个代码片段-->
+<!--        th:fragment定义的片段，实现局部刷新，控制器类中会返回blogList-->
+        <table th:fragment="blogList" class="ui compact teal table">  <!--代码片段，局部刷新-->
           <thead>
           <tr>
             <th></th>
@@ -96,13 +100,13 @@
           </tr>
           </thead>
           <tbody>
-          <tr th:each="blog,iterStat : ${page.content}">
+          <tr th:each="blog,iterStat : ${page.content}">  <!--th:each 迭代-->
             <td th:text="${iterStat.count}">1</td>
             <td th:text="${blog.title}">刻意练习清单</td>
             <td th:text="${blog.type.name}">认知升级</td>
             <td th:text="${blog.recommend} ? '是':'否'">是</td>
             <td th:text="${blog.published} ? '发布':'草稿'">草稿</td>
-            <td th:text="${blog.updateTime}">2017-10-02 09:45</td>
+            <td th:text="${blog.updateTime}">2020-10-01 10:00</td>
             <td>
               <a href="#" th:href="@{/admin/blogs/{id}/input(id=${blog.id})}" class="ui mini teal basic button">编辑</a>
               <a href="#" th:href="@{/admin/blogs/{id}/delete(id=${blog.id})}" class="ui mini red basic button">删除</a>
@@ -112,7 +116,11 @@
           <tfoot>
           <tr>
             <th colspan="7">
+<!--              th:unless和th:if，用来控制标签是否显示-->
+<!--              th:if="${page.totalPages}>1"：如果总页数不大于1，则隐藏该标签-->
               <div class="ui mini pagination menu" th:if="${page.totalPages}>1" >
+<!--                th:attr 动态改变页码数-->
+<!--                th:unless与if相反，如果不满足则显示标签。如果不是第一页则显示上一页，如果不是最后一页则显示下一页-->
                 <a onclick="page(this)" th:attr="data-page=${page.number}-1" class="item" th:unless="${page.first}">上一页</a>
                 <a onclick="page(this)" th:attr="data-page=${page.number}+1" class=" item" th:unless="${page.last}">下一页</a>
               </div>
@@ -122,6 +130,7 @@
           </tfoot>
         </table>
 
+        <!--隐藏域-->
         <div class="ui success message" th:unless="${#strings.isEmpty(message)}">
           <i class="close icon"></i>
           <div class="header">提示：</div>
@@ -214,6 +223,7 @@
       $("[name='page']").val(0);
       loaddata();
     });
+
     function loaddata() {
       $("#table-container").load(/*[[@{/admin/blogs/search}]]*/"/admin/blogs/search",{
         title : $("[name='title']").val(),

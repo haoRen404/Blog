@@ -37,43 +37,46 @@ public class BlogController {
     @Autowired
     private TagService tagService;      // 标签service
 
-    // 显示博客主页
+    // 显示博客列表页面
+    // springmvc 通过 Pageable对象和@PageableDefault注解获取分页信息
+    // size：每一页的展示的数量，默认为20；sort：用来排序的属性；direction：排序方式，Sort.Direction.DESC是倒叙
     @GetMapping("/blogs")
-    public String blogs(@PageableDefault(size = 3, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
+    public String blogs(@PageableDefault(size = 6, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
                         BlogQuery blog, Model model) {
         model.addAttribute("types", typeService.listType());// 查出分类列表
         model.addAttribute("page", blogService.listBlog(pageable, blog));// 分页的方式显示博客
         return LIST;
     }
 
-    //
+    // 局部刷新，分页查询出需要局部刷新的数据
     @PostMapping("/blogs/search")
-    public String search(@PageableDefault(size = 8, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
+    public String search(@PageableDefault(size = 6, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
                          BlogQuery blog, Model model) {
-        model.addAttribute("page", blogService.listBlog(pageable, blog));
-        return "admin/blogs :: blogList";
+        model.addAttribute("page", blogService.listBlog(pageable, blog)); // 返回分页查询出的数据
+        return "admin/blogs :: blogList";   // 返回代码片段，使用h:fragment标签引用
     }
 
-
-    @GetMapping("/blogs/input")
-    public String input(Model model) {
-        setTypeAndTag(model);
-        model.addAttribute("blog", new Blog());
-        return INPUT;
-    }
-
+    // 对分类和标签的框框初始化，把值赋进去
     private void setTypeAndTag(Model model) {
         model.addAttribute("types", typeService.listType());
         model.addAttribute("tags", tagService.listTag());
     }
 
+    // 跳转到新增
+    @GetMapping("/blogs/input")
+    public String input(Model model) {
+        setTypeAndTag(model);// 初始化，，把值赋进去
+        model.addAttribute("blog", new Blog()); // 新建博客对象，存储新增的博客
+        return INPUT; // 跳转新增页面
+    }
 
+    // 这才是新增，新增按钮
     @GetMapping("/blogs/{id}/input")
-    public String editInput(@PathVariable Long id, Model model) {
-        setTypeAndTag(model);
-        Blog blog = blogService.getBlog(id);
-        blog.init();
-        model.addAttribute("blog",blog);
+    public String editInput(@PathVariable Long id, Model model) {// id是跳转到新增页面时新建的博客对象的id
+        setTypeAndTag(model);// 初始化，，把值赋进去
+        Blog blog = blogService.getBlog(id);// 查询出指定id的博客
+        blog.init();// 进行初始化
+        model.addAttribute("blog",blog);// 往前台传数据
         return INPUT;
     }
 
