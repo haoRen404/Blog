@@ -19,3 +19,5 @@
 @Transient  // 标识是普通的属性，不进行数据库操作
 @Autowired 注入
 @Transactional 开启事务
+@Controller 标记该类是控制器
+@RequestMapping 用来处理请求地址映射的注解

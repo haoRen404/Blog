@@ -21,30 +21,32 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import javax.servlet.http.HttpSession;
 
 
-@Controller
-@RequestMapping("/admin")
+@Controller // 标记该类是控制器
+@RequestMapping("/admin")   // 用来处理请求地址映射的注解
 public class BlogController {
 
-    private static final String INPUT = "admin/blogs-input";
-    private static final String LIST = "admin/blogs";
-    private static final String REDIRECT_LIST = "redirect:/admin/blogs";
+    private static final String INPUT = "admin/blogs-input";    // 添加博客的路径
+    private static final String LIST = "admin/blogs";   // 博客列表路径
+    private static final String REDIRECT_LIST = "redirect:/admin/blogs";    // 请求转发到博客列表路径
 
 
     @Autowired
-    private BlogService blogService;
+    private BlogService blogService;    // 博客service
     @Autowired
-    private TypeService typeService;
+    private TypeService typeService;    // 分类service
     @Autowired
-    private TagService tagService;
+    private TagService tagService;      // 标签service
 
+    // 显示博客主页
     @GetMapping("/blogs")
-    public String blogs(@PageableDefault(size = 8, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
+    public String blogs(@PageableDefault(size = 3, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
                         BlogQuery blog, Model model) {
-        model.addAttribute("types", typeService.listType());
-        model.addAttribute("page", blogService.listBlog(pageable, blog));
+        model.addAttribute("types", typeService.listType());// 查出分类列表
+        model.addAttribute("page", blogService.listBlog(pageable, blog));// 分页的方式显示博客
         return LIST;
     }
 
+    //
     @PostMapping("/blogs/search")
     public String search(@PageableDefault(size = 8, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
                          BlogQuery blog, Model model) {
