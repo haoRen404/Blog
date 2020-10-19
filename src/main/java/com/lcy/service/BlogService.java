@@ -19,6 +19,9 @@ public interface BlogService {
     // 分页
     Page<Blog> listBlog(Pageable pageable);
 
+    // 搜素
+    Page<Blog> listBlog(String query,Pageable pageable);
+
     // 获取最新的博客，最新推荐
     List<Blog> listRecommendBlogTop(Integer size);
 

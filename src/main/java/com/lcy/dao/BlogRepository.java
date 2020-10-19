@@ -17,4 +17,8 @@ public interface BlogRepository extends JpaRepository<Blog, Long>, JpaSpecificat
     @Query("select b from Blog b where b.recommend = true ")
     List<Blog> findTop(Pageable pageable);
 
+    // 搜索。“?1”表示第一个参数，?2表示第二个参数
+    @Query("select b from Blog b where b.title like ?1 or b.content like ?1 or b.description like ?1") // 通过标题、内容或描述来搜索
+    Page<Blog> findByQuery(String query,Pageable pageable);
+
 }
