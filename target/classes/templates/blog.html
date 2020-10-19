@@ -132,7 +132,7 @@
               <h3 class="ui dividing header">评论</h3>
               <div class="comment" th:each="comment : ${comments}">
                 <a class="avatar">
-                  <!--                头像-->
+                  <!--头像-->
                   <img src="https://hbimg.huabanimg.com/f8ade59327308c2794f4699a8859e61c1c15678b1f0b-3XeuZH_fw658/format/webp"
                        th:src="@{${comment.avatar}}">
                 </a>
@@ -150,6 +150,60 @@
                        th:attr="data-commentid=${comment.id}, data-commentnickname=${comment.nickname}">回复</a>
                   </div>
                 </div>
+
+                <!--二级评论-->
+                <div class="comments" th:if="${#arrays.length(comment.replyComments)}>0"> <!--子集不为空才显示，即有二级标题-->
+                  <div class="comment" th:each="reply:${comment.replyComments}"> <!--拿到二级评论，遍历-->
+                    <a class="avatar">
+                      <!--头像-->
+                      <img src="../static/images/lcy2.jpg" th:href="@{/static/images/lcy2.jpg}">
+                    </a>
+                    <div class="content">
+                      <a class="author" th:text="${reply.nickname}">
+                        <span th:text="${reply.nickname}">回复者</span>
+                        <span th:text="${reply.parentComment.nickname}" class="m-teal">@ &nbsp; 被回复者</span>
+                      </a>
+                      <div class="metadata">
+                        <span class="date" th:text="${#dates.format(reply.createTime,'yyyy-MM-dd HH:mm')}">星期五 10:00</span>
+                      </div>
+                      <div class="text" th:text="${reply.content}">
+                        这是一个二级回复
+                      </div>
+                      <div class="actions">
+                        <a class="reply" data-commentid="1" data-commentnickname="Matt" th:attr="data-commentid=${reply.id},data-commentnickname=${reply.nickname}" onclick="reply(this)">回复</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <!--二级评论-->
+<!--                <div class="comments" th:if="${#arrays.length(comment.replyComments)}>0">  &lt;!&ndash;子集不为空才显示，即有二级标题&ndash;&gt;-->
+<!--                  <div class="comment" th:each="reply : ${comment.replyComments}">-->
+<!--                    <a class="avatar">-->
+<!--                      &lt;!&ndash;二级评论头像&ndash;&gt;-->
+<!--                      <img src="../static/images/tx/tx1.jpg" th:src="@{${reply.avatar}}">-->
+<!--                    </a>-->
+<!--                    <div class="content">-->
+<!--                      <a class="author" >-->
+<!--                        <span th:text="${reply.nickname}">回复者</span>-->
+<!--                        <div class="ui mini basic teal left pointing label m-padded-mini"-->
+<!--                             th:if="${reply.adminComment}">博主</div>-->
+<!--                        &nbsp;<span th:text="|@ ${reply.parentComment.nickname}|" class="m-teal">@被回复者</span>-->
+<!--                      </a>-->
+<!--                      <div class="metadata">-->
+<!--                        <span class="date" th:text="${#dates.format(reply.createTime,'yyyy-MM-dd HH:mm')}">星期五 10:00</span>-->
+<!--                      </div>-->
+<!--                      <div class="text" th:text="${reply.content}">-->
+<!--                        我回复你啦-->
+<!--                      </div>-->
+<!--                      <div class="actions">-->
+<!--                        <a class="reply" data-commentid="1" data-commentnickname="Matt"  onclick="reply(this)"-->
+<!--                           th:attr="data-commentid=${reply.id},data-commentnickname=${reply.nickname}">回复</a>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
               </div>
 
             </div>
@@ -353,6 +407,7 @@
       }
     });
 
+    // 页面加载成功，自动加载评论
     $(function () {
       $("#comment-container").load(/*[[@{/comments/{id}(id=${blog.id})}]]*/"comments/6");
     });

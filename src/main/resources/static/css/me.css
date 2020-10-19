@@ -143,10 +143,13 @@ body {
     right: 0 !important;
 }
 
-
+/*主色调？*/
 /*-----color-----*/
 .m-black {
     color: #333 !important;
+}
+.m-teal {
+    color: #00B5AD !important;
 }
 
 .m-mobile-show {
