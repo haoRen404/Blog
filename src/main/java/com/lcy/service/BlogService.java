@@ -5,6 +5,8 @@ import com.lcy.vo.BlogQuery;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
+import java.util.List;
+
 
 public interface BlogService {
 
@@ -13,6 +15,12 @@ public interface BlogService {
 
     // 分页
     Page<Blog> listBlog(Pageable pageable,BlogQuery blog);
+
+    // 分页
+    Page<Blog> listBlog(Pageable pageable);
+
+    // 获取最新的博客，最新推荐
+    List<Blog> listRecommendBlogTop(Integer size);
 
     // 修改博客
     Blog saveBlog(Blog blog);

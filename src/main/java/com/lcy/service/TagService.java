@@ -24,6 +24,9 @@ public interface TagService {
     // 获取全部标签
     List<Tag> listTag();
 
+    // 获取Top标签
+    List<Tag> listTagTop(Integer size);
+
     //
     List<Tag> listTag(String ids);
 

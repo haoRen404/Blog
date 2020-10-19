@@ -19,6 +19,8 @@ public interface TypeService {
 
     List<Type> listType();  // 获取所有标签
 
+    List<Type> listTypeTop(Integer size);// 取size个标签
+
     Type updateType(Long id,Type type);// 修改
 
     void deleteType(Long id);// 删除

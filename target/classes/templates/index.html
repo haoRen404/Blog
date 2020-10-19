@@ -45,14 +45,62 @@
                 <h3 class="ui teal header">博客</h3>
               </div>
               <div class="right aligned column">
-                共 <h2 class="ui orange header m-inline-block m-text-thin"> 10 </h2> 篇
+                共 <h2 class="ui orange header m-inline-block m-text-thin" th:text="${page.totalElements}">8</h2> 篇
               </div>
             </div>
           </div>
 
           <!--content-->
-          <div class="ui attached  segment">
+          <div class="ui attached segment">
 
+            <div class="ui padded vertical segment m-padded-tb-large" th:each="blog : ${page.content}">
+              <div class="ui middle aligned mobile reversed stackable grid"> <!--middle aligned：垂直居中-->
+                <div class="eleven wide column">
+                  <h3 class="ui header" target="_blank">
+                    <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="m-black" th:text="${blog.title}">
+                      《小丑》，一部我不想推荐的年度杰作
+                    </a>
+                  </h3>
+<!--                  || 是用来字符串拼接的，取出的数据拼接上字符串-->
+                  <p class="m-text" th:text="|${blog.description}……|">
+                    今年的威尼斯电影节上《小丑》拿下了金狮，成为首部获得三大电影节的漫改片。男主杰昆的表现绝对有资格当影帝，但受传统所限（每部作品只能拿一项），杰昆没能……
+                  </p>
+                  <div class="ui grid">
+                    <div class="eleven wide column">
+                      <div class="ui mini horizontal link list">
+                        <div class="item">
+                          <!--头像-->
+                          <img src="https://hbimg.huabanimg.com/f8ade59327308c2794f4699a8859e61c1c15678b1f0b-3XeuZH_fw658/format/webp"
+                               th:src="@{${blog.user.avatar}}" alt="" class="ui avatar image">
+                          <div class="content"><a href="#" class="header" th:text="${blog.user.nickname}">李朝阳</a></div>
+                        </div>
+                        <div class="item">
+<!--                          #dates.fromat() 用来格式化时间-->
+                          <i class="calendar icon"></i>
+                          <span th:text="${#dates.format(blog.updateTime, 'yyyy-MM-dd')}">2020-10-01</span>
+                        </div>
+                        <div class="item">
+                          <i class="eye icon"></i><span th:text="${blog.views}">1024</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="right aligned five wide column">
+                      <a href="#" target="_blank" class="ui teal basic label m-padded-tiny m-text-thin" th:text="${blog.type.name}">认知升级</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="five wide column">
+                  <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank">
+                    <!--博客主图-->
+                    <img src="https://hbimg.huabanimg.com/a3f8fd5e33d9aed81836922fcee4f4fc4d93f8067a39e-atpUdU_fw658/format/webp"
+                         th:src="@{${blog.firstPicture}}" alt="" class="ui rounded image">
+                  </a>
+                </div>
+
+              </div>
+            </div>
+            <!--/*-->
             <div class="ui padded vertical segment m-padded-tb-large">
               <div class="ui mobile reversed stackable grid">
                 <div class="eleven wide column">
@@ -70,6 +118,44 @@
                         </div>
                         <div class="item">
                           <i class="calendar icon"></i> 2017-10-01
+                        </div>
+                        <div class="item">
+                          <i class="eye icon"></i> 2342
+                        </div>
+                      </div>
+                    </div>
+                    <div class="right aligned five wide column">
+                      <a href="#" target="_blank" class="ui teal basic label m-padded-tiny m-text-thin">认知升级</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="five wide column">
+                  <a href="#" target="_blank">
+                    <!--博客主图-->
+                    <img src="https://hbimg.huabanimg.com/a3f8fd5e33d9aed81836922fcee4f4fc4d93f8067a39e-atpUdU_fw658/format/webp" alt="" class="ui rounded image">
+                  </a>
+                </div>
+
+              </div>
+            </div>
+            <div class="ui padded vertical segment m-padded-tb-large">
+              <div class="ui mobile reversed stackable grid">
+                <div class="eleven wide column">
+                  <h3 class="ui header">《小丑》，一部我不想推荐的年度杰作</h3>
+                  <p class="m-text">
+                    今年的威尼斯电影节上《小丑》拿下了金狮，成为首部获得三大电影节的漫改片。男主杰昆的表现绝对有资格当影帝，但受传统所限（每部作品只能拿一项），杰昆没能……
+                  </p>
+                  <div class="ui grid">
+                    <div class="eleven wide column">
+                      <div class="ui mini horizontal link list">
+                        <div class="item">
+                          <!--头像-->
+                          <img src="https://hbimg.huabanimg.com/f8ade59327308c2794f4699a8859e61c1c15678b1f0b-3XeuZH_fw658/format/webp" alt="" class="ui avatar image">
+                          <div class="content"><a href="#" class="header">李朝阳</a></div>
+                        </div>
+                        <div class="item">
+                          <i class="calendar icon"></i> 2020-10-01
                         </div>
                         <div class="item">
                           <i class="eye icon"></i> 2342
@@ -357,94 +443,18 @@
 
               </div>
             </div>
-            <div class="ui padded vertical segment m-padded-tb-large">
-              <div class="ui mobile reversed stackable grid">
-                <div class="eleven wide column">
-                  <h3 class="ui header">《小丑》，一部我不想推荐的年度杰作</h3>
-                  <p class="m-text">
-                    今年的威尼斯电影节上《小丑》拿下了金狮，成为首部获得三大电影节的漫改片。男主杰昆的表现绝对有资格当影帝，但受传统所限（每部作品只能拿一项），杰昆没能……
-                  </p>
-                  <div class="ui grid">
-                    <div class="eleven wide column">
-                      <div class="ui mini horizontal link list">
-                        <div class="item">
-                          <!--头像-->
-                          <img src="https://hbimg.huabanimg.com/f8ade59327308c2794f4699a8859e61c1c15678b1f0b-3XeuZH_fw658/format/webp" alt="" class="ui avatar image">
-                          <div class="content"><a href="#" class="header">李朝阳</a></div>
-                        </div>
-                        <div class="item">
-                          <i class="calendar icon"></i> 2017-10-01
-                        </div>
-                        <div class="item">
-                          <i class="eye icon"></i> 2342
-                        </div>
-                      </div>
-                    </div>
-                    <div class="right aligned five wide column">
-                      <a href="#" target="_blank" class="ui teal basic label m-padded-tiny m-text-thin">认知升级</a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="five wide column">
-                  <a href="#" target="_blank">
-                    <!--博客主图-->
-                    <img src="https://hbimg.huabanimg.com/a3f8fd5e33d9aed81836922fcee4f4fc4d93f8067a39e-atpUdU_fw658/format/webp" alt="" class="ui rounded image">
-                  </a>
-                </div>
-
-              </div>
-            </div>
-            <div class="ui padded vertical segment m-padded-tb-large">
-              <div class="ui mobile reversed stackable grid">
-                <div class="eleven wide column">
-                  <h3 class="ui header">《小丑》，一部我不想推荐的年度杰作</h3>
-                  <p class="m-text">
-                    今年的威尼斯电影节上《小丑》拿下了金狮，成为首部获得三大电影节的漫改片。男主杰昆的表现绝对有资格当影帝，但受传统所限（每部作品只能拿一项），杰昆没能……
-                  </p>
-                  <div class="ui grid">
-                    <div class="eleven wide column">
-                      <div class="ui mini horizontal link list">
-                        <div class="item">
-                          <!--头像-->
-                          <img src="https://hbimg.huabanimg.com/f8ade59327308c2794f4699a8859e61c1c15678b1f0b-3XeuZH_fw658/format/webp" alt="" class="ui avatar image">
-                          <div class="content"><a href="#" class="header">李朝阳</a></div>
-                        </div>
-                        <div class="item">
-                          <i class="calendar icon"></i> 2017-10-01
-                        </div>
-                        <div class="item">
-                          <i class="eye icon"></i> 2342
-                        </div>
-                      </div>
-                    </div>
-                    <div class="right aligned five wide column">
-                      <a href="#" target="_blank" class="ui teal basic label m-padded-tiny m-text-thin">认知升级</a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="five wide column">
-                  <a href="#" target="_blank">
-                    <!--博客主图-->
-                    <img src="https://hbimg.huabanimg.com/a3f8fd5e33d9aed81836922fcee4f4fc4d93f8067a39e-atpUdU_fw658/format/webp" alt="" class="ui rounded image">
-                  </a>
-                </div>
-
-              </div>
-            </div>
-
+            <!--*/-->
 
           </div>
 
           <!--footer-->
           <div class="ui bottom attached segment">
-            <div class="ui middle aligned two column grid">
+            <div class="ui middle aligned two column grid" th:if="${page.totalPages}>1">
               <div class="column">
-                <a href="#" class="ui mini teal basic button">上一页</a>
+                <a href="#" th:href="@{/(page=${page.number}-1)}" class="ui mini teal basic button" th:unless="${page.first}">上一页</a>
               </div>
               <div class="right aligned column">
-                <a href="#" class="ui mini teal basic button">下一页</a>
+                <a href="#" th:href="@{/(page=${page.number}+1)}" class="ui mini teal basic button" th:unless="${page.last}">下一页</a>
               </div>
             </div>
           </div>
@@ -462,12 +472,18 @@
                   <i class="idea icon"></i>分类
                 </div>
                 <div class="right aligned column">
-                  <a href="#" target="_blank">more <i class="angle double right icon"></i></a>
+                  <a href="#" target="_blank">more<i class="angle double right icon"></i></a>
                 </div>
               </div>
             </div>
             <div class="ui teal segment">
               <div class="ui fluid vertical menu">
+                <a href="#" class="item" th:each="type : ${types}">
+                  <span th:text="${type.name}">学习笔记</span>
+<!--                  #arrays.length() 获取集合的长度-->
+                  <div class="ui teal basic left pointing label" th:text="${#arrays.length(type.blogs)}">8</div>
+                </a>
+                <!--/*-->
                 <a href="#" class="item">
                   学习笔记
                   <div class="ui teal basic left pointing label">8</div>
@@ -488,10 +504,7 @@
                   学习笔记
                   <div class="ui teal basic left pointing label">8</div>
                 </a>
-                <a href="#" class="item">
-                  学习笔记
-                  <div class="ui teal basic left pointing label">8</div>
-                </a>
+                <!--*/-->
               </div>
             </div>
           </div>
@@ -504,14 +517,16 @@
                   <i class="tags icon"></i>标签
                 </div>
                 <div class="right aligned column">
-                  <a href="#" target="_blank">more <i class="angle double right icon"></i></a>
+                  <a href="#" target="_blank">more<i class="angle double right icon"></i></a>
                 </div>
               </div>
             </div>
             <div class="ui teal segment">
-              <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
-                标签标签 <div class="detail">8</div>
+              <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny" th:each="tag:${tags}">
+                <span th:text="${tag.name}">标签标签</span>
+                <div class="detail" th:text="${#arrays.length(tag.blogs)}">8</div>
               </a>
+              <!--/*-->
               <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
                 论 <div class="detail">8</div>
               </a>
@@ -539,6 +554,7 @@
               <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
                 标签标签 <div class="detail">8</div>
               </a>
+              <!--*/-->
             </div>
           </div>
 
@@ -547,9 +563,10 @@
             <div class="ui secondary segment ">
               <i class="bookmark icon"></i>最新推荐
             </div>
-            <div class="ui segment">
-              <a href="#" target="_blank" class="m-black m-text-thin">这是一篇最新博客</a>
+            <div class="ui segment" th:each="blog:${recommendBlogs}">
+              <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="m-black m-text-thin" th:text="${blog.title}">这是一篇最新博客</a>
             </div>
+            <!--/*-->
             <div class="ui segment" >
               <a href="#" target="_blank" class="m-black m-text-thin">这是一篇最新博客</a>
             </div>
@@ -571,6 +588,7 @@
             <div class="ui segment">
               <a href="#" target="_blank" class="m-black m-text-thin">这是一篇最新博客</a>
             </div>
+            <!--*/-->
           </div>
 
           <!--二维码-->
