@@ -5,4 +5,5 @@ spring:
     active: dev
 
 
+comment.avatar: /images/tx/tx1.jpg
 

@@ -23,13 +23,14 @@ public class Comment {
     private Date createTime;// 创建时间
 
     @ManyToOne
-    private Blog blog;
+    private Blog blog;// 所属的博客
 
     @OneToMany(mappedBy = "parentComment")
     private List<Comment> replyComments = new ArrayList<>();
 
     @ManyToOne
-    private Comment parentComment;
+    private Comment parentComment;// 父评论
+
 
     public Comment() {
     }

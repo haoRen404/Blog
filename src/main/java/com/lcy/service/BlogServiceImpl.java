@@ -4,6 +4,7 @@ import com.lcy.NotFoundException;
 import com.lcy.dao.BlogRepository;
 import com.lcy.po.Blog;
 import com.lcy.po.Type;
+import com.lcy.util.MarkdownUtils;
 import com.lcy.util.MyBeanUtils;
 import com.lcy.vo.BlogQuery;
 import org.springframework.beans.BeanUtils;
@@ -39,6 +40,21 @@ public class BlogServiceImpl implements BlogService {
         return blogRepository.findOne(id);
     }
 
+    // 获取博客，进行博客详情展示
+    @Override
+    public Blog getAndConvert(Long id) {
+        Blog blog = blogRepository.findOne(id);
+        if (blog == null){
+            throw new NotFoundException("该博客不存在");
+        }
+
+        Blog b = new Blog();
+        BeanUtils.copyProperties(blog, b);
+        String content = blog.getContent();
+        blog.setContent(MarkdownUtils.markdownToHtmlExtensions(content));// Markdown 转 HTML
+
+        return b;
+    }
 
     // 分页
     @Override
