@@ -1,6 +1,7 @@
 package com.lcy.web;
 
 import com.lcy.po.Comment;
+import com.lcy.po.User;
 import com.lcy.service.BlogService;
 import com.lcy.service.CommentService;
 import com.sun.org.apache.xpath.internal.operations.Mod;
@@ -11,6 +12,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+
+import javax.servlet.http.HttpSession;
 
 @Controller
 public class CommentController {
@@ -34,9 +37,20 @@ public class CommentController {
 
     // 提交评论
     @PostMapping("/comments")
-    public String post(Comment comment){
+    public String post(Comment comment, HttpSession session){
         Long blogId = comment.getBlog().getId();// 获取所属博客的id
         comment.setBlog(blogService.getBlog(blogId));// 所属博客
+
+        // 判断是否登录，登录的话则评论是博主评论
+    User user = (User)session.getAttribute("user");
+        if (user != null) {
+            comment.setAvatar(user.getAvatar());
+            comment.setAdminComment(true);
+            comment.setNickname(user.getNickname());
+        } else {
+            comment.setAvatar(avatar);
+        }
+
         comment.setAvatar(avatar);// 头像
         commentService.saveComment(comment);// 保存评论
 

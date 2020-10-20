@@ -22,6 +22,9 @@ public interface BlogService {
     // 分页
     Page<Blog> listBlog(Pageable pageable);
 
+    // 分页查询某标签的博客
+    Page<Blog> listBlog(Long tagId, Pageable pageable);
+
     // 搜素
     Page<Blog> listBlog(String query,Pageable pageable);
 

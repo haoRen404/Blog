@@ -47,7 +47,7 @@
       </div>
     </div>
 
-
+<!--    博客列表-->
     <div class="ui top attached teal segment">
       <div class="ui padded vertical segment m-padded-tb-large" th:each="blog : ${page.content}">
         <div class="ui middle aligned mobile reversed stackable grid" >
@@ -85,7 +85,7 @@
       </div>
     </div>
 
-    <!--footer-->
+    <!--分页-->
     <div class="ui bottom attached segment" th:if="${page.totalPages}>1">
       <div class="ui middle aligned two column grid">
         <div class="column">
@@ -96,7 +96,6 @@
         </div>
       </div>
     </div>
-
   </div>
 </div>
 

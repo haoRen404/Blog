@@ -1,5 +1,6 @@
 package com.lcy.service;
 
+
 import com.lcy.NotFoundException;
 import com.lcy.dao.BlogRepository;
 import com.lcy.po.Blog;
@@ -17,13 +18,8 @@ import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Predicate;
-import javax.persistence.criteria.Root;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import javax.persistence.criteria.*;
+import java.util.*;
 
 
 @Service
@@ -41,6 +37,7 @@ public class BlogServiceImpl implements BlogService {
     }
 
     // 获取博客，进行博客详情展示
+    @Transactional
     @Override
     public Blog getAndConvert(Long id) {
         Blog blog = blogRepository.findOne(id);
@@ -52,6 +49,8 @@ public class BlogServiceImpl implements BlogService {
         BeanUtils.copyProperties(blog, b);
         String content = blog.getContent();
         blog.setContent(MarkdownUtils.markdownToHtmlExtensions(content));// Markdown 转 HTML
+
+        blogRepository.updateViews(id);// 每访问一次，浏览次数+1
 
         return b;
     }
@@ -103,6 +102,19 @@ public class BlogServiceImpl implements BlogService {
     @Override
     public Page<Blog> listBlog(String query, Pageable pageable) {
         return blogRepository.findByQuery(query, pageable);
+    }
+
+    // 分页查询某标签的博客
+    @Override
+    public Page<Blog> listBlog(Long tagId, Pageable pageable) {
+        return blogRepository.findAll(new Specification<Blog>() {
+            @Override
+            public Predicate toPredicate(Root<Blog> root, CriteriaQuery<?> cq, CriteriaBuilder cb) {
+                Join join = root.join("tags");
+
+                return cb.equal(join.get("id"), tagId);
+            }
+        }, pageable);
     }
 
     // 获取最新推荐博客

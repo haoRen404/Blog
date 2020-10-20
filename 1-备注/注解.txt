@@ -22,3 +22,4 @@
 @Controller 标记该类是控制器
 @RequestMapping 用来处理请求地址映射的注解
 @Valid 用于验证注解是否符合要求
+@Modifying 通知spring date这是一个修改或删除操作

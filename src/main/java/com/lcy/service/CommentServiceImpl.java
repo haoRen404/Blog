@@ -21,8 +21,8 @@ public class CommentServiceImpl implements CommentService {
     // 获取评论，做层级处理
     @Override
     public List<Comment> listCommentByBlogId(Long blogId) {
-//        Sort sort = new Sort(Sort.Direction.DESC, "createTime");
-        Sort sort = new Sort("createTime");
+//        Sort sort = new Sort(Sort.Direction.DESC, "createTime");// 倒叙
+        Sort sort = new Sort("createTime");// 不要倒叙，让新评论出现在下面
 
         // 数据返回之前先做层级处理
         List<Comment> comments = commentRepository.findByBlogIdAndParentCommentNull(blogId,sort);
