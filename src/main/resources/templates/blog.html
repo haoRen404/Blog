@@ -127,7 +127,7 @@
       <div class="ui bottom attached segment">
         <!--评论区-->
         <div id="comment-container"  class="ui teal segment">
-          <div th:fragment="commentList">
+          <div th:fragment="commentList"> <!--代码片段，局部刷新-->
             <div class="ui threaded comments" style="max-width: 100%;">
               <h3 class="ui dividing header">评论</h3>
               <div class="comment" th:each="comment : ${comments}">
@@ -159,9 +159,9 @@
                       <img src="../static/images/lcy2.jpg" th:href="@{/static/images/lcy2.jpg}">
                     </a>
                     <div class="content">
-                      <a class="author" th:text="${reply.nickname}">
+                      <a class="author">
                         <span th:text="${reply.nickname}">回复者</span>
-                        <span th:text="${reply.parentComment.nickname}" class="m-teal">@ &nbsp; 被回复者</span>
+                        <span th:text="|@${reply.parentComment.nickname}|" class="m-teal">&nbsp;&nbsp; 被回复者</span>
                       </a>
                       <div class="metadata">
                         <span class="date" th:text="${#dates.format(reply.createTime,'yyyy-MM-dd HH:mm')}">星期五 10:00</span>
