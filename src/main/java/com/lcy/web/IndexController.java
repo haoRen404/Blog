@@ -52,6 +52,12 @@ public class IndexController {
         return "blog";
     }
 
+    @GetMapping("/footer/newblog")
+    public String newblogs(Model model) {
+        model.addAttribute("newblogs", blogService.listRecommendBlogTop(3));// 取三个最新的博客，放在尾部
+        return "_fragments :: newblogList";
+    }
+
 
 }
 

@@ -126,6 +126,27 @@ public class BlogServiceImpl implements BlogService {
         return blogRepository.findTop(pageable);
     }
 
+
+    // 归档，同一年的存放到一个list中，list存放在map中，年份是key，list是value
+    @Override
+    public Map<String, List<Blog>> archiveBlog() {
+        List<String> years = blogRepository.findGroupYear();// 获取到倒序排序的年份list集合
+
+        Map<String, List<Blog>> map = new HashMap<>();
+        for(String year : years){
+            map.put(year, blogRepository.findByYear(year));// 根据年份查询出所有博客
+        }
+
+        return map;
+    }
+
+    // 归档，查出博客总条数
+    @Override
+    public Long countBlog() {
+        return blogRepository.count();
+    }
+
+
     // 修改博客
     @Transactional  // 开启事务
     @Override

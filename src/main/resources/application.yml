@@ -3,6 +3,8 @@ spring:
     mode: HTML
   profiles:
     active: dev
+  messages:
+    basename: i18n/messages # 配置i18配置文件的路径，默认是放在resources下
 
 
 comment.avatar: /images/tx/tx1.jpg

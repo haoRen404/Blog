@@ -19,7 +19,7 @@
   <div class="ui container">
     <div class="ui inverted secondary stackable menu">
       <h2 class="ui teal header item">Blog</h2>
-      <a href="#" th:href="@{/}" class="m-item item m-mobile-hide " th:classappend="${n==1} ? 'active'"><i class="home icon"></i>首页</a>
+      <a href="#" th:href="@{/}" class="m-item item m-mobile-hide " th:classappend="${n==1} ? 'active'"><i class="home icon"></i><span th:text="#{nav.index}">首页</span></a>
       <a href="#" th:href="@{/types/-1}" class="m-item item m-mobile-hide" th:classappend="${n==2} ? 'active'"><i class="idea icon"></i>分类</a>
       <a href="#" th:href="@{/tags/-1}" class="m-item item m-mobile-hide" th:classappend="${n==3} ? 'active'"><i class="tags icon"></i>标签</a>
       <a href="#" th:href="@{/archives}" class="m-item item m-mobile-hide" th:classappend="${n==4} ? 'active'"><i class="clone icon"></i>归档</a>
@@ -58,16 +58,18 @@
       </div>
       <div class="three wide column">
         <h4 class="ui inverted header m-text-thin m-text-spaced " >最新博客</h4>
-        <div class="ui inverted link list">
-          <a href="#" class="item m-text-thin">这是一篇最新博客</a>
-          <a href="#" class="item m-text-thin">这是一篇最新博客</a>
-          <a href="#" class="item m-text-thin">这是一篇最新博客</a>
+
+        <div id="newblog-container">
+          <div class="ui inverted link list" th:fragment="newblogList"> <!--定义一个模板-->
+            <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="item m-text-thin" th:each="blog : ${newblogs}" th:text="${blog.title}">这是一篇最新博客</a>
+          </div>
         </div>
+
       </div>
       <div class="three wide column">
         <h4 class="ui inverted header m-text-thin m-text-spaced ">联系我</h4>
         <div class="ui inverted link list">
-          <a href="#" class="item m-text-thin">Email：1756510828@qq.com.com</a>
+          <a href="#" class="item m-text-thin" th:text="#{index.email}">Email：1756510828@qq.com.com</a>
           <a href="#" class="item m-text-thin">QQ：1756510828</a>
         </div>
       </div>
@@ -92,6 +94,10 @@
   <script src="../static/lib/tocbot/tocbot.min.js" th:src="@{/lib/tocbot/tocbot.min.js}"></script>
   <script src="../static/lib/qrcode/qrcode.min.js" th:src="@{/lib/qrcode/qrcode.min.js}"></script>
   <script src="../static/lib/waypoints/jquery.waypoints.min.js" th:src="@{/lib/waypoints/jquery.waypoints.min.js}"></script>
+
+  <script>
+    $('#newblog-container').load(/*[[@{/footer/newblog}]]*/"/footer/newblog");// 页面加载完后进行局部刷新，刷新尾部的最新评论
+  </script>
 </th:block>
 
 </body>

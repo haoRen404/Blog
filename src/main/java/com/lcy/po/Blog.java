@@ -24,7 +24,7 @@ public class Blog {
     private String flag;// 标记
     private Integer views;// 浏览次数
     private boolean appreciation;// 赞赏开启
-    private boolean shareStatement;// 转载声明
+    private boolean shareStatement;// 转载声明开启
     private boolean commentabled;// 评论开启
     private boolean published;// 发布
     private boolean recommend;// 推荐
