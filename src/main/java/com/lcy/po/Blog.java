@@ -11,7 +11,7 @@ import java.util.List;
 public class Blog {
 
     @Id // 指定这是id
-    @GeneratedValue //// 提供了主键的生成策略
+    @GeneratedValue // 提供了主键的生成策略
     private Long id;
 
     private String title;// 标题
@@ -21,7 +21,7 @@ public class Blog {
     private String content;// 内容
 
     private String firstPicture;// 内容
-    private String flag;// 标记
+    private String flag;// 原创标记
     private Integer views;// 浏览次数
     private boolean appreciation;// 赞赏开启
     private boolean shareStatement;// 转载声明开启
@@ -33,6 +33,7 @@ public class Blog {
     private Date createTime;// 创建时间
     @Temporal(TemporalType.TIMESTAMP)
     private Date updateTime;// 更新时间
+
 
     @ManyToOne // 设置实体关系，多对一
     private Type type;

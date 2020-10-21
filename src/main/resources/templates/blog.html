@@ -42,7 +42,7 @@
       <div class="ui top attached segment">
         <div class="ui horizontal link list">
           <div class="item">
-<!--            头像-->
+            <!--头像-->
             <img src="https://hbimg.huabanimg.com/f8ade59327308c2794f4699a8859e61c1c15678b1f0b-3XeuZH_fw658/format/webp"
                  th:src="@{${blog.user.avatar}}" alt="" class="ui avatar image">
             <div class="content"><a href="#" class="header" th:text="${blog.user.nickname}">李朝阳</a></div>
@@ -67,15 +67,15 @@
           <div class="ui orange basic label" th:text="${blog.flag}">原创</div>
         </div>
 
-<!--        文章标题-->
+        <!--文章标题-->
         <h2 class="ui center aligned header" th:text="${blog.title}">typo.css中摘抄过来的预览效果</h2>
         <br>
 
-<!--        内容区域-->
+        <!--内容区域-->
         <!--中间主要内容部分-->
         <div id="content" class="typo  typo-selection js-toc-content m-padded-lr-responsive m-padded-tb-large"
              th:utext="${blog.content}"> <!--th:utext会转义，执行html代码；th:text不转义，显示完整的html代码-->
-
+            文章内容内容文章内容内容文章内容内容文章内容内容文章内容内容文章内容内容文章内容内容
         </div>
 
         <!--标签-->
@@ -118,7 +118,7 @@
             </ui>
           </div>
           <div class="five wide column">
-<!--            微信-->
+            <!--微信-->
             <img src="../static/images/wechat.jpg" th:src="@{https://hbimg.huabanimg.com/8285d4eeae2e4b07368be57caade0232e78866ef9e76-AZoB67_fw658/format/webp}"
                  alt="" class="ui right floated rounded bordered image" style="width: 110px">
           </div>

@@ -65,7 +65,7 @@ public class BlogController {
     // 新增
     @GetMapping("/blogs/input")
     public String input(Model model) {
-        setTypeAndTag(model);// 初始化，，把值赋进去
+        setTypeAndTag(model);// 初始化，，把分类、标签赋进去
         model.addAttribute("blog", new Blog()); // 新建博客对象，用来存储新增的博客内容
         return INPUT; // 跳转新增页面
     }
@@ -91,7 +91,7 @@ public class BlogController {
         blog.setTags(tagService.listTag(blog.getTagIds()));// 为博客设置标签
 
         Blog b;
-        if (blog.getId() == null) {// 如果没有id，则说明没有改博客，发布即是添加博客
+        if (blog.getId() == null) {// 如果没有id，则说明没有该博客，发布即是添加博客
             b =  blogService.saveBlog(blog);
         } else {
             b = blogService.updateBlog(blog.getId(), blog);// 有id则说明博客已经存在，发布即是修改

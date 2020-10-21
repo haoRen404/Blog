@@ -38,10 +38,10 @@ public interface BlogService {
     // 归档，查出博客总条数
     Long countBlog();
 
-    // 修改博客
+    // 新增博客
     Blog saveBlog(Blog blog);
 
-    // 新增博客
+    // 修改博客
     Blog updateBlog(Long id,Blog blog);
 
     // 删除博客

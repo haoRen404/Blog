@@ -36,3 +36,976 @@
 2020-10-21 00:54:45.940  INFO 4484 --- [http-nio-8080-exec-2] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
 2020-10-21 00:54:46.104  INFO 4484 --- [http-nio-8080-exec-4] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/comments/2', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.CommentController.comments', args=[2, {}]}
 2020-10-21 00:54:46.108  INFO 4484 --- [http-nio-8080-exec-4] com.lcy.aspect.LogAspect                 : Result : blog :: commentList
+2020-10-21 00:58:45.464  INFO 4484 --- [http-nio-8080-exec-8] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.index', args=[Page request [number: 0, size 6, sort: updateTime: DESC], {}]}
+2020-10-21 00:58:45.477  INFO 4484 --- [http-nio-8080-exec-8] com.lcy.aspect.LogAspect                 : Result : index
+2020-10-21 00:58:46.161  INFO 4484 --- [http-nio-8080-exec-9] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 00:58:46.166  INFO 4484 --- [http-nio-8080-exec-9] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 00:58:51.247  INFO 4484 --- [http-nio-8080-exec-3] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.TypeShowController.types', args=[Page request [number: 0, size 6, sort: updateTime: DESC], -1, {}]}
+2020-10-21 00:58:51.443  INFO 4484 --- [http-nio-8080-exec-3] com.lcy.aspect.LogAspect                 : Result : types
+2020-10-21 00:58:51.935  INFO 4484 --- [http-nio-8080-exec-3] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 00:58:51.939  INFO 4484 --- [http-nio-8080-exec-3] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 00:58:52.657  INFO 4484 --- [http-nio-8080-exec-2] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.TagShowController.tags', args=[Page request [number: 0, size 6, sort: updateTime: DESC], -1, {}]}
+2020-10-21 00:58:52.670  INFO 4484 --- [http-nio-8080-exec-2] com.lcy.aspect.LogAspect                 : Result : tags
+2020-10-21 00:58:53.182  INFO 4484 --- [http-nio-8080-exec-2] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 00:58:53.188  INFO 4484 --- [http-nio-8080-exec-2] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 00:58:53.809  INFO 4484 --- [http-nio-8080-exec-5] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.ArchiveShowController.archives', args=[{}]}
+2020-10-21 00:58:53.830  INFO 4484 --- [http-nio-8080-exec-5] com.lcy.aspect.LogAspect                 : Result : archives
+2020-10-21 00:58:54.306  INFO 4484 --- [http-nio-8080-exec-5] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 00:58:54.310  INFO 4484 --- [http-nio-8080-exec-5] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 00:58:55.208  INFO 4484 --- [http-nio-8080-exec-7] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.AboutShowController.about', args=[]}
+2020-10-21 00:58:55.209  INFO 4484 --- [http-nio-8080-exec-7] com.lcy.aspect.LogAspect                 : Result : about
+2020-10-21 00:58:55.700  INFO 4484 --- [http-nio-8080-exec-7] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 00:58:55.704  INFO 4484 --- [http-nio-8080-exec-7] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 00:58:56.583  INFO 4484 --- [http-nio-8080-exec-4] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.index', args=[Page request [number: 0, size 6, sort: updateTime: DESC], {}]}
+2020-10-21 00:58:56.696  INFO 4484 --- [http-nio-8080-exec-4] com.lcy.aspect.LogAspect                 : Result : index
+2020-10-21 00:58:57.244  INFO 4484 --- [http-nio-8080-exec-8] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 00:58:57.248  INFO 4484 --- [http-nio-8080-exec-8] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 00:58:58.671  INFO 4484 --- [http-nio-8080-exec-6] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/11', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.blog', args=[11, {}]}
+2020-10-21 00:58:58.851  INFO 4484 --- [http-nio-8080-exec-6] com.lcy.aspect.LogAspect                 : Result : blog
+2020-10-21 00:58:59.295  INFO 4484 --- [http-nio-8080-exec-6] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 00:58:59.300  INFO 4484 --- [http-nio-8080-exec-6] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 00:59:23.029  INFO 4484 --- [http-nio-8080-exec-10] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.TypeShowController.types', args=[Page request [number: 0, size 6, sort: updateTime: DESC], -1, {}]}
+2020-10-21 00:59:23.041  INFO 4484 --- [http-nio-8080-exec-10] com.lcy.aspect.LogAspect                 : Result : types
+2020-10-21 00:59:23.580  INFO 4484 --- [http-nio-8080-exec-10] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 00:59:23.586  INFO 4484 --- [http-nio-8080-exec-10] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 00:59:27.415  INFO 4484 --- [http-nio-8080-exec-9] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/2', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.blog', args=[2, {}]}
+2020-10-21 00:59:27.457  INFO 4484 --- [http-nio-8080-exec-9] com.lcy.aspect.LogAspect                 : Result : blog
+2020-10-21 00:59:28.000  INFO 4484 --- [http-nio-8080-exec-1] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 00:59:28.004  INFO 4484 --- [http-nio-8080-exec-1] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 00:59:28.090  INFO 4484 --- [http-nio-8080-exec-5] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/comments/2', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.CommentController.comments', args=[2, {}]}
+2020-10-21 00:59:28.092  INFO 4484 --- [http-nio-8080-exec-5] com.lcy.aspect.LogAspect                 : Result : blog :: commentList
+2020-10-21 00:59:38.412  INFO 4484 --- [http-nio-8080-exec-7] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/comments', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.CommentController.post', args=[Comment{id=null, nickname='是好人呀', email='1756510828@qq.com', content='好好好', avatar='null', createTime=null, blog=Blog{id=2, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=false, shareStatement=false, commentabled=false, published=false, recommend=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds='null', description='null'}, replyComments=[], parentComment=Comment{id=2, nickname='null', email='null', content='null', avatar='null', createTime=null, blog=null, replyComments=[], parentComment=null, adminComment=false}, adminComment=false}, org.apache.catalina.session.StandardSessionFacade@efb6948]}
+2020-10-21 00:59:38.430  INFO 4484 --- [http-nio-8080-exec-7] com.lcy.aspect.LogAspect                 : Result : redirect:/comments/2
+2020-10-21 00:59:38.436  INFO 4484 --- [http-nio-8080-exec-6] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/comments/2', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.CommentController.comments', args=[2, {}]}
+2020-10-21 00:59:38.606  INFO 4484 --- [http-nio-8080-exec-6] com.lcy.aspect.LogAspect                 : Result : blog :: commentList
+2020-10-21 00:59:38.629 ERROR 4484 --- [http-nio-8080-exec-2] c.l.handler.ControllerExceptionHandler   : Requst URL : http://localhost:8080/blog/$%7Bcomment.avatar，Exception : {}
+
+org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "${comment"
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:128)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:158)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:128)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1457)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NumberFormatException: For input string: "${comment"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:578)
+	at java.lang.Long.valueOf(Long.java:803)
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:211)
+	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:113)
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:468)
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:441)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:199)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:108)
+	at org.springframework.beans.TypeConverterSupport.doConvert(TypeConverterSupport.java:64)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:47)
+	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:713)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:120)
+	... 51 common frames omitted
+
+2020-10-21 00:59:38.633  WARN 4484 --- [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "${comment"
+2020-10-21 00:59:43.325  INFO 4484 --- [http-nio-8080-exec-3] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/comments', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.CommentController.post', args=[Comment{id=null, nickname='是好人呀', email='1756510828@qq.com', content='号好啊后', avatar='null', createTime=null, blog=Blog{id=2, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=false, shareStatement=false, commentabled=false, published=false, recommend=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds='null', description='null'}, replyComments=[], parentComment=Comment{id=-1, nickname='null', email='null', content='null', avatar='null', createTime=null, blog=null, replyComments=[], parentComment=null, adminComment=false}, adminComment=false}, org.apache.catalina.session.StandardSessionFacade@efb6948]}
+2020-10-21 00:59:43.497  INFO 4484 --- [http-nio-8080-exec-3] com.lcy.aspect.LogAspect                 : Result : redirect:/comments/2
+2020-10-21 00:59:43.501  INFO 4484 --- [http-nio-8080-exec-4] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/comments/2', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.CommentController.comments', args=[2, {}]}
+2020-10-21 00:59:43.506  INFO 4484 --- [http-nio-8080-exec-4] com.lcy.aspect.LogAspect                 : Result : blog :: commentList
+2020-10-21 00:59:43.517 ERROR 4484 --- [http-nio-8080-exec-8] c.l.handler.ControllerExceptionHandler   : Requst URL : http://localhost:8080/blog/$%7Bcomment.avatar，Exception : {}
+
+org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "${comment"
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:128)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:158)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:128)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1457)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NumberFormatException: For input string: "${comment"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:578)
+	at java.lang.Long.valueOf(Long.java:803)
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:211)
+	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:113)
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:468)
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:441)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:199)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:108)
+	at org.springframework.beans.TypeConverterSupport.doConvert(TypeConverterSupport.java:64)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:47)
+	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:713)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:120)
+	... 51 common frames omitted
+
+2020-10-21 00:59:43.517  WARN 4484 --- [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "${comment"
+2020-10-21 00:59:48.463  INFO 4484 --- [http-nio-8080-exec-10] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/comments', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.CommentController.post', args=[Comment{id=null, nickname='是好人呀', email='1756510828@qq.com', content='好好好', avatar='null', createTime=null, blog=Blog{id=2, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=false, shareStatement=false, commentabled=false, published=false, recommend=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds='null', description='null'}, replyComments=[], parentComment=Comment{id=17, nickname='null', email='null', content='null', avatar='null', createTime=null, blog=null, replyComments=[], parentComment=null, adminComment=false}, adminComment=false}, org.apache.catalina.session.StandardSessionFacade@efb6948]}
+2020-10-21 00:59:48.479  INFO 4484 --- [http-nio-8080-exec-10] com.lcy.aspect.LogAspect                 : Result : redirect:/comments/2
+2020-10-21 00:59:48.483  INFO 4484 --- [http-nio-8080-exec-9] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/comments/2', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.CommentController.comments', args=[2, {}]}
+2020-10-21 00:59:48.490  INFO 4484 --- [http-nio-8080-exec-9] com.lcy.aspect.LogAspect                 : Result : blog :: commentList
+2020-10-21 00:59:48.502 ERROR 4484 --- [http-nio-8080-exec-1] c.l.handler.ControllerExceptionHandler   : Requst URL : http://localhost:8080/blog/$%7Bcomment.avatar，Exception : {}
+
+org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "${comment"
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:128)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:158)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:128)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1457)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NumberFormatException: For input string: "${comment"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:578)
+	at java.lang.Long.valueOf(Long.java:803)
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:211)
+	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:113)
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:468)
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:441)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:199)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:108)
+	at org.springframework.beans.TypeConverterSupport.doConvert(TypeConverterSupport.java:64)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:47)
+	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:713)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:120)
+	... 51 common frames omitted
+
+2020-10-21 00:59:48.503  WARN 4484 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "${comment"
+2020-10-21 01:02:53.239  INFO 4484 --- [http-nio-8080-exec-9] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.index', args=[Page request [number: 0, size 6, sort: updateTime: DESC], {}]}
+2020-10-21 01:02:53.255  INFO 4484 --- [http-nio-8080-exec-9] com.lcy.aspect.LogAspect                 : Result : index
+2020-10-21 01:02:54.272  INFO 4484 --- [http-nio-8080-exec-5] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 01:02:54.276  INFO 4484 --- [http-nio-8080-exec-5] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 01:03:02.519  INFO 4484 --- [http-nio-8080-exec-6] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/2', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.blog', args=[2, {}]}
+2020-10-21 01:03:02.866  INFO 4484 --- [http-nio-8080-exec-6] com.lcy.aspect.LogAspect                 : Result : blog
+2020-10-21 01:03:03.452  INFO 4484 --- [http-nio-8080-exec-2] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 01:03:03.456  INFO 4484 --- [http-nio-8080-exec-2] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 01:03:03.578  INFO 4484 --- [http-nio-8080-exec-3] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/comments/2', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.CommentController.comments', args=[2, {}]}
+2020-10-21 01:03:03.592  INFO 4484 --- [http-nio-8080-exec-3] com.lcy.aspect.LogAspect                 : Result : blog :: commentList
+2020-10-21 01:03:03.610 ERROR 4484 --- [http-nio-8080-exec-8] c.l.handler.ControllerExceptionHandler   : Requst URL : http://localhost:8080/blog/$%7Bcomment.avatar，Exception : {}
+
+org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "${comment"
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:128)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:158)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:128)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1457)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NumberFormatException: For input string: "${comment"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:578)
+	at java.lang.Long.valueOf(Long.java:803)
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:211)
+	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:113)
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:468)
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:441)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:199)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:108)
+	at org.springframework.beans.TypeConverterSupport.doConvert(TypeConverterSupport.java:64)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:47)
+	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:713)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:120)
+	... 51 common frames omitted
+
+2020-10-21 01:03:03.611  WARN 4484 --- [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "${comment"
+2020-10-21 01:03:09.102  INFO 4484 --- [http-nio-8080-exec-2] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/2', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.blog', args=[2, {}]}
+2020-10-21 01:03:09.107  INFO 4484 --- [http-nio-8080-exec-2] com.lcy.aspect.LogAspect                 : Result : blog
+2020-10-21 01:03:09.634  INFO 4484 --- [http-nio-8080-exec-7] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 01:03:09.637  INFO 4484 --- [http-nio-8080-exec-7] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 01:03:09.718  INFO 4484 --- [http-nio-8080-exec-10] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/comments/2', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.CommentController.comments', args=[2, {}]}
+2020-10-21 01:03:09.724  INFO 4484 --- [http-nio-8080-exec-10] com.lcy.aspect.LogAspect                 : Result : blog :: commentList
+2020-10-21 01:03:09.740 ERROR 4484 --- [http-nio-8080-exec-3] c.l.handler.ControllerExceptionHandler   : Requst URL : http://localhost:8080/blog/$%7Bcomment.avatar，Exception : {}
+
+org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "${comment"
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:128)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:158)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:128)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1457)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NumberFormatException: For input string: "${comment"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:578)
+	at java.lang.Long.valueOf(Long.java:803)
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:211)
+	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:113)
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:468)
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:441)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:199)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:108)
+	at org.springframework.beans.TypeConverterSupport.doConvert(TypeConverterSupport.java:64)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:47)
+	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:713)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:120)
+	... 51 common frames omitted
+
+2020-10-21 01:03:09.741  WARN 4484 --- [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "${comment"
+2020-10-21 01:03:14.304  INFO 4484 --- [http-nio-8080-exec-5] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.TypeShowController.types', args=[Page request [number: 0, size 6, sort: updateTime: DESC], -1, {}]}
+2020-10-21 01:03:14.314  INFO 4484 --- [http-nio-8080-exec-5] com.lcy.aspect.LogAspect                 : Result : types
+2020-10-21 01:03:14.812  INFO 4484 --- [http-nio-8080-exec-5] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 01:03:14.816  INFO 4484 --- [http-nio-8080-exec-5] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 01:03:23.470  INFO 4484 --- [http-nio-8080-exec-2] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.TagShowController.tags', args=[Page request [number: 0, size 6, sort: updateTime: DESC], -1, {}]}
+2020-10-21 01:03:23.477  INFO 4484 --- [http-nio-8080-exec-2] com.lcy.aspect.LogAspect                 : Result : tags
+2020-10-21 01:03:23.970  INFO 4484 --- [http-nio-8080-exec-2] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 01:03:23.974  INFO 4484 --- [http-nio-8080-exec-2] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 01:03:31.896  INFO 4484 --- [http-nio-8080-exec-1] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.ArchiveShowController.archives', args=[{}]}
+2020-10-21 01:03:31.909  INFO 4484 --- [http-nio-8080-exec-1] com.lcy.aspect.LogAspect                 : Result : archives
+2020-10-21 01:03:32.359  INFO 4484 --- [http-nio-8080-exec-1] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 01:03:32.362  INFO 4484 --- [http-nio-8080-exec-1] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 01:03:44.999  INFO 4484 --- [http-nio-8080-exec-10] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.TagShowController.tags', args=[Page request [number: 0, size 6, sort: updateTime: DESC], -1, {}]}
+2020-10-21 01:03:45.012  INFO 4484 --- [http-nio-8080-exec-10] com.lcy.aspect.LogAspect                 : Result : tags
+2020-10-21 01:03:45.504  INFO 4484 --- [http-nio-8080-exec-10] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 01:03:45.511  INFO 4484 --- [http-nio-8080-exec-10] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 01:03:48.446  INFO 4484 --- [http-nio-8080-exec-6] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.ArchiveShowController.archives', args=[{}]}
+2020-10-21 01:03:48.460  INFO 4484 --- [http-nio-8080-exec-6] com.lcy.aspect.LogAspect                 : Result : archives
+2020-10-21 01:03:49.081  INFO 4484 --- [http-nio-8080-exec-6] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 01:03:49.088  INFO 4484 --- [http-nio-8080-exec-6] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 01:03:50.431  INFO 4484 --- [http-nio-8080-exec-4] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.TagShowController.tags', args=[Page request [number: 0, size 6, sort: updateTime: DESC], -1, {}]}
+2020-10-21 01:03:50.439  INFO 4484 --- [http-nio-8080-exec-4] com.lcy.aspect.LogAspect                 : Result : tags
+2020-10-21 01:03:50.919  INFO 4484 --- [http-nio-8080-exec-4] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 01:03:50.924  INFO 4484 --- [http-nio-8080-exec-4] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 01:03:53.586  INFO 4484 --- [http-nio-8080-exec-9] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.ArchiveShowController.archives', args=[{}]}
+2020-10-21 01:03:53.602  INFO 4484 --- [http-nio-8080-exec-9] com.lcy.aspect.LogAspect                 : Result : archives
+2020-10-21 01:03:54.068  INFO 4484 --- [http-nio-8080-exec-9] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 01:03:54.072  INFO 4484 --- [http-nio-8080-exec-9] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 01:03:57.378  INFO 4484 --- [http-nio-8080-exec-2] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.TagShowController.tags', args=[Page request [number: 0, size 6, sort: updateTime: DESC], -1, {}]}
+2020-10-21 01:03:57.387  INFO 4484 --- [http-nio-8080-exec-2] com.lcy.aspect.LogAspect                 : Result : tags
+2020-10-21 01:03:57.874  INFO 4484 --- [http-nio-8080-exec-2] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 01:03:57.878  INFO 4484 --- [http-nio-8080-exec-2] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 01:04:14.638  INFO 4484 --- [http-nio-8080-exec-3] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.ArchiveShowController.archives', args=[{}]}
+2020-10-21 01:04:14.650  INFO 4484 --- [http-nio-8080-exec-3] com.lcy.aspect.LogAspect                 : Result : archives
+2020-10-21 01:04:15.111  INFO 4484 --- [http-nio-8080-exec-3] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 01:04:15.114  INFO 4484 --- [http-nio-8080-exec-3] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 01:06:12.465  INFO 4484 --- [http-nio-8080-exec-4] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.TypeShowController.types', args=[Page request [number: 0, size 6, sort: updateTime: DESC], -1, {}]}
+2020-10-21 01:06:12.475  INFO 4484 --- [http-nio-8080-exec-4] com.lcy.aspect.LogAspect                 : Result : types
+2020-10-21 01:06:12.962  INFO 4484 --- [http-nio-8080-exec-4] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 01:06:12.965  INFO 4484 --- [http-nio-8080-exec-4] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 01:06:14.079  INFO 4484 --- [http-nio-8080-exec-9] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.TagShowController.tags', args=[Page request [number: 0, size 6, sort: updateTime: DESC], -1, {}]}
+2020-10-21 01:06:14.088  INFO 4484 --- [http-nio-8080-exec-9] com.lcy.aspect.LogAspect                 : Result : tags
+2020-10-21 01:06:14.546  INFO 4484 --- [http-nio-8080-exec-9] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 01:06:14.551  INFO 4484 --- [http-nio-8080-exec-9] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 12:25:34.842  INFO 11064 --- [restartedMain] com.lcy.BlogApplication                  : Starting BlogApplication on daobanWindows10 with PID 11064 (E:\IDEA_gzkj\JavaProjects\blog\target\classes started by young in E:\IDEA_gzkj\JavaProjects\blog)
+2020-10-21 12:25:34.843  INFO 11064 --- [restartedMain] com.lcy.BlogApplication                  : The following profiles are active: dev
+2020-10-21 12:25:35.202  INFO 11064 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@87c9eee: startup date [Wed Oct 21 12:25:35 CST 2020]; root of context hierarchy
+2020-10-21 12:25:38.257  INFO 11064 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2020-10-21 12:25:38.270  INFO 11064 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-21 12:25:38.271  INFO 11064 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2020-10-21 12:25:38.391  INFO 11064 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-21 12:25:38.391  INFO 11064 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3189 ms
+2020-10-21 12:25:38.563  INFO 11064 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-21 12:25:38.568  INFO 11064 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-21 12:25:38.568  INFO 11064 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-21 12:25:38.569  INFO 11064 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-21 12:25:38.569  INFO 11064 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-21 12:25:39.406  INFO 11064 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-10-21 12:25:39.430  INFO 11064 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-10-21 12:25:39.737  INFO 11064 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-10-21 12:25:39.738  INFO 11064 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-10-21 12:25:39.740  INFO 11064 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-10-21 12:25:39.812  INFO 11064 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-10-21 12:25:40.154  INFO 11064 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-10-21 12:25:40.685  INFO 11064 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2020-10-21 12:25:40.874  INFO 11064 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-21 12:25:41.213  INFO 11064 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-10-21 12:25:42.360  INFO 11064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@87c9eee: startup date [Wed Oct 21 12:25:35 CST 2020]; root of context hierarchy
+2020-10-21 12:25:42.459  INFO 11064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/about],methods=[GET]}" onto public java.lang.String com.lcy.web.AboutShowController.about()
+2020-10-21 12:25:42.464  INFO 11064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/{id}/delete],methods=[GET]}" onto public java.lang.String com.lcy.web.admin.BlogController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-10-21 12:25:42.464  INFO 11064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/search],methods=[POST]}" onto public java.lang.String com.lcy.web.admin.BlogController.search(org.springframework.data.domain.Pageable,com.lcy.vo.BlogQuery,org.springframework.ui.Model)
+2020-10-21 12:25:42.464  INFO 11064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/input],methods=[GET]}" onto public java.lang.String com.lcy.web.admin.BlogController.input(org.springframework.ui.Model)
+2020-10-21 12:25:42.465  INFO 11064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[POST]}" onto public java.lang.String com.lcy.web.admin.BlogController.post(com.lcy.po.Blog,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpSession)
+2020-10-21 12:25:42.465  INFO 11064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[GET]}" onto public java.lang.String com.lcy.web.admin.BlogController.blogs(org.springframework.data.domain.Pageable,com.lcy.vo.BlogQuery,org.springframework.ui.Model)
+2020-10-21 12:25:42.465  INFO 11064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/{id}/input],methods=[GET]}" onto public java.lang.String com.lcy.web.admin.BlogController.editInput(java.lang.Long,org.springframework.ui.Model)
+2020-10-21 12:25:42.467  INFO 11064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[POST]}" onto public java.lang.String com.lcy.web.admin.LoginController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-10-21 12:25:42.467  INFO 11064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/logout],methods=[GET]}" onto public java.lang.String com.lcy.web.admin.LoginController.logout(javax.servlet.http.HttpSession)
+2020-10-21 12:25:42.468  INFO 11064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public java.lang.String com.lcy.web.admin.LoginController.loginPage()
+2020-10-21 12:25:42.470  INFO 11064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}/delete],methods=[GET]}" onto public java.lang.String com.lcy.web.admin.TagController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-10-21 12:25:42.470  INFO 11064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/input],methods=[GET]}" onto public java.lang.String com.lcy.web.admin.TagController.input(org.springframework.ui.Model)
+2020-10-21 12:25:42.470  INFO 11064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags],methods=[GET]}" onto public java.lang.String com.lcy.web.admin.TagController.tags(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2020-10-21 12:25:42.470  INFO 11064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags],methods=[POST]}" onto public java.lang.String com.lcy.web.admin.TagController.post(com.lcy.po.Tag,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-10-21 12:25:42.471  INFO 11064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}/input],methods=[GET]}" onto public java.lang.String com.lcy.web.admin.TagController.editInput(java.lang.Long,org.springframework.ui.Model)
+2020-10-21 12:25:42.471  INFO 11064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}],methods=[POST]}" onto public java.lang.String com.lcy.web.admin.TagController.editPost(com.lcy.po.Tag,org.springframework.validation.BindingResult,java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-10-21 12:25:42.473  INFO 11064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}/delete],methods=[GET]}" onto public java.lang.String com.lcy.web.admin.TypeController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-10-21 12:25:42.473  INFO 11064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[GET]}" onto public java.lang.String com.lcy.web.admin.TypeController.types(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2020-10-21 12:25:42.473  INFO 11064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/input],methods=[GET]}" onto public java.lang.String com.lcy.web.admin.TypeController.input(org.springframework.ui.Model)
+2020-10-21 12:25:42.473  INFO 11064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[POST]}" onto public java.lang.String com.lcy.web.admin.TypeController.post(com.lcy.po.Type,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-10-21 12:25:42.473  INFO 11064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}/input],methods=[GET]}" onto public java.lang.String com.lcy.web.admin.TypeController.editInput(java.lang.Long,org.springframework.ui.Model)
+2020-10-21 12:25:42.474  INFO 11064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}],methods=[POST]}" onto public java.lang.String com.lcy.web.admin.TypeController.editPost(com.lcy.po.Type,org.springframework.validation.BindingResult,java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-10-21 12:25:42.476  INFO 11064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/archives],methods=[GET]}" onto public java.lang.String com.lcy.web.ArchiveShowController.archives(org.springframework.ui.Model)
+2020-10-21 12:25:42.477  INFO 11064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comments/{blogId}],methods=[GET]}" onto public java.lang.String com.lcy.web.CommentController.comments(java.lang.Long,org.springframework.ui.Model)
+2020-10-21 12:25:42.477  INFO 11064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comments],methods=[POST]}" onto public java.lang.String com.lcy.web.CommentController.post(com.lcy.po.Comment,javax.servlet.http.HttpSession)
+2020-10-21 12:25:42.478  INFO 11064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.lcy.web.IndexController.index(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2020-10-21 12:25:42.479  INFO 11064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search],methods=[POST]}" onto public java.lang.String com.lcy.web.IndexController.search(org.springframework.data.domain.Pageable,java.lang.String,org.springframework.ui.Model)
+2020-10-21 12:25:42.479  INFO 11064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog/{id}],methods=[GET]}" onto public java.lang.String com.lcy.web.IndexController.blog(java.lang.Long,org.springframework.ui.Model)
+2020-10-21 12:25:42.479  INFO 11064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/footer/newblog],methods=[GET]}" onto public java.lang.String com.lcy.web.IndexController.newblogs(org.springframework.ui.Model)
+2020-10-21 12:25:42.481  INFO 11064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tags/{id}],methods=[GET]}" onto public java.lang.String com.lcy.web.TagShowController.tags(org.springframework.data.domain.Pageable,java.lang.Long,org.springframework.ui.Model)
+2020-10-21 12:25:42.482  INFO 11064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/types/{id}],methods=[GET]}" onto public java.lang.String com.lcy.web.TypeShowController.types(org.springframework.data.domain.Pageable,java.lang.Long,org.springframework.ui.Model)
+2020-10-21 12:25:42.484  INFO 11064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-21 12:25:42.485  INFO 11064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-21 12:25:42.527  INFO 11064 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-21 12:25:42.527  INFO 11064 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-21 12:25:42.545  INFO 11064 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2020-10-21 12:25:42.570  INFO 11064 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-21 12:25:43.319  INFO 11064 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-21 12:25:43.364  INFO 11064 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-10-21 12:25:43.415  INFO 11064 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2020-10-21 12:25:43.419  INFO 11064 --- [restartedMain] com.lcy.BlogApplication                  : Started BlogApplication in 9.221 seconds (JVM running for 12.112)
+2020-10-21 12:27:00.704  INFO 11064 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-10-21 12:27:00.705  INFO 11064 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-21 12:27:00.748  INFO 11064 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 43 ms
+2020-10-21 12:30:35.728  INFO 11064 --- [http-nio-8080-exec-6] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/2', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.blog', args=[2, {}]}
+2020-10-21 12:30:36.338  INFO 11064 --- [http-nio-8080-exec-6] com.lcy.aspect.LogAspect                 : Result : blog
+2020-10-21 12:30:37.134  INFO 11064 --- [http-nio-8080-exec-6] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 12:30:37.144  INFO 11064 --- [http-nio-8080-exec-6] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 12:30:37.539  INFO 11064 --- [http-nio-8080-exec-8] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/comments/2', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.CommentController.comments', args=[2, {}]}
+2020-10-21 12:30:37.759  INFO 11064 --- [http-nio-8080-exec-8] com.lcy.aspect.LogAspect                 : Result : blog :: commentList
+2020-10-21 12:30:37.839 ERROR 11064 --- [http-nio-8080-exec-7] c.l.handler.ControllerExceptionHandler   : Requst URL : http://localhost:8080/blog/$%7Bcomment.avatar，Exception : {}
+
+org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "${comment"
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:128)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:158)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:128)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1457)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NumberFormatException: For input string: "${comment"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:578)
+	at java.lang.Long.valueOf(Long.java:803)
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:211)
+	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:113)
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:468)
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:441)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:199)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:108)
+	at org.springframework.beans.TypeConverterSupport.doConvert(TypeConverterSupport.java:64)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:47)
+	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:713)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:120)
+	... 51 common frames omitted
+
+2020-10-21 12:30:37.840  WARN 11064 --- [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "${comment"
+2020-10-21 12:31:27.146  INFO 13976 --- [restartedMain] com.lcy.BlogApplication                  : Starting BlogApplication on daobanWindows10 with PID 13976 (E:\IDEA_gzkj\JavaProjects\blog\target\classes started by young in E:\IDEA_gzkj\JavaProjects\blog)
+2020-10-21 12:31:27.147  INFO 13976 --- [restartedMain] com.lcy.BlogApplication                  : The following profiles are active: dev
+2020-10-21 12:31:27.350  INFO 13976 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@584eb097: startup date [Wed Oct 21 12:31:27 CST 2020]; root of context hierarchy
+2020-10-21 12:31:29.156  INFO 13976 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2020-10-21 12:31:29.164  INFO 13976 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-21 12:31:29.165  INFO 13976 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2020-10-21 12:31:29.267  INFO 13976 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-21 12:31:29.267  INFO 13976 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1917 ms
+2020-10-21 12:31:29.407  INFO 13976 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-21 12:31:29.412  INFO 13976 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-21 12:31:29.412  INFO 13976 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-21 12:31:29.413  INFO 13976 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-21 12:31:29.413  INFO 13976 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-21 12:31:30.308  INFO 13976 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-10-21 12:31:30.319  INFO 13976 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-10-21 12:31:30.512  INFO 13976 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-10-21 12:31:30.514  INFO 13976 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-10-21 12:31:30.515  INFO 13976 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-10-21 12:31:30.548  INFO 13976 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-10-21 12:31:30.657  INFO 13976 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-10-21 12:31:31.042  INFO 13976 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2020-10-21 12:31:31.191  INFO 13976 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-21 12:31:31.456  INFO 13976 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-10-21 12:31:32.187  INFO 13976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@584eb097: startup date [Wed Oct 21 12:31:27 CST 2020]; root of context hierarchy
+2020-10-21 12:31:32.248  INFO 13976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/about],methods=[GET]}" onto public java.lang.String com.lcy.web.AboutShowController.about()
+2020-10-21 12:31:32.253  INFO 13976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/{id}/delete],methods=[GET]}" onto public java.lang.String com.lcy.web.admin.BlogController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-10-21 12:31:32.253  INFO 13976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/search],methods=[POST]}" onto public java.lang.String com.lcy.web.admin.BlogController.search(org.springframework.data.domain.Pageable,com.lcy.vo.BlogQuery,org.springframework.ui.Model)
+2020-10-21 12:31:32.253  INFO 13976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/input],methods=[GET]}" onto public java.lang.String com.lcy.web.admin.BlogController.input(org.springframework.ui.Model)
+2020-10-21 12:31:32.254  INFO 13976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[POST]}" onto public java.lang.String com.lcy.web.admin.BlogController.post(com.lcy.po.Blog,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpSession)
+2020-10-21 12:31:32.254  INFO 13976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[GET]}" onto public java.lang.String com.lcy.web.admin.BlogController.blogs(org.springframework.data.domain.Pageable,com.lcy.vo.BlogQuery,org.springframework.ui.Model)
+2020-10-21 12:31:32.254  INFO 13976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/{id}/input],methods=[GET]}" onto public java.lang.String com.lcy.web.admin.BlogController.editInput(java.lang.Long,org.springframework.ui.Model)
+2020-10-21 12:31:32.255  INFO 13976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/logout],methods=[GET]}" onto public java.lang.String com.lcy.web.admin.LoginController.logout(javax.servlet.http.HttpSession)
+2020-10-21 12:31:32.255  INFO 13976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public java.lang.String com.lcy.web.admin.LoginController.loginPage()
+2020-10-21 12:31:32.256  INFO 13976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[POST]}" onto public java.lang.String com.lcy.web.admin.LoginController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-10-21 12:31:32.257  INFO 13976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}/delete],methods=[GET]}" onto public java.lang.String com.lcy.web.admin.TagController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-10-21 12:31:32.257  INFO 13976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/input],methods=[GET]}" onto public java.lang.String com.lcy.web.admin.TagController.input(org.springframework.ui.Model)
+2020-10-21 12:31:32.258  INFO 13976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags],methods=[GET]}" onto public java.lang.String com.lcy.web.admin.TagController.tags(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2020-10-21 12:31:32.258  INFO 13976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags],methods=[POST]}" onto public java.lang.String com.lcy.web.admin.TagController.post(com.lcy.po.Tag,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-10-21 12:31:32.258  INFO 13976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}/input],methods=[GET]}" onto public java.lang.String com.lcy.web.admin.TagController.editInput(java.lang.Long,org.springframework.ui.Model)
+2020-10-21 12:31:32.258  INFO 13976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}],methods=[POST]}" onto public java.lang.String com.lcy.web.admin.TagController.editPost(com.lcy.po.Tag,org.springframework.validation.BindingResult,java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-10-21 12:31:32.260  INFO 13976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}/delete],methods=[GET]}" onto public java.lang.String com.lcy.web.admin.TypeController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-10-21 12:31:32.260  INFO 13976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[GET]}" onto public java.lang.String com.lcy.web.admin.TypeController.types(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2020-10-21 12:31:32.261  INFO 13976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/input],methods=[GET]}" onto public java.lang.String com.lcy.web.admin.TypeController.input(org.springframework.ui.Model)
+2020-10-21 12:31:32.261  INFO 13976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[POST]}" onto public java.lang.String com.lcy.web.admin.TypeController.post(com.lcy.po.Type,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-10-21 12:31:32.261  INFO 13976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}/input],methods=[GET]}" onto public java.lang.String com.lcy.web.admin.TypeController.editInput(java.lang.Long,org.springframework.ui.Model)
+2020-10-21 12:31:32.261  INFO 13976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}],methods=[POST]}" onto public java.lang.String com.lcy.web.admin.TypeController.editPost(com.lcy.po.Type,org.springframework.validation.BindingResult,java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-10-21 12:31:32.264  INFO 13976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/archives],methods=[GET]}" onto public java.lang.String com.lcy.web.ArchiveShowController.archives(org.springframework.ui.Model)
+2020-10-21 12:31:32.264  INFO 13976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comments/{blogId}],methods=[GET]}" onto public java.lang.String com.lcy.web.CommentController.comments(java.lang.Long,org.springframework.ui.Model)
+2020-10-21 12:31:32.265  INFO 13976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comments],methods=[POST]}" onto public java.lang.String com.lcy.web.CommentController.post(com.lcy.po.Comment,javax.servlet.http.HttpSession)
+2020-10-21 12:31:32.266  INFO 13976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.lcy.web.IndexController.index(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2020-10-21 12:31:32.266  INFO 13976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search],methods=[POST]}" onto public java.lang.String com.lcy.web.IndexController.search(org.springframework.data.domain.Pageable,java.lang.String,org.springframework.ui.Model)
+2020-10-21 12:31:32.266  INFO 13976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog/{id}],methods=[GET]}" onto public java.lang.String com.lcy.web.IndexController.blog(java.lang.Long,org.springframework.ui.Model)
+2020-10-21 12:31:32.267  INFO 13976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/footer/newblog],methods=[GET]}" onto public java.lang.String com.lcy.web.IndexController.newblogs(org.springframework.ui.Model)
+2020-10-21 12:31:32.267  INFO 13976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tags/{id}],methods=[GET]}" onto public java.lang.String com.lcy.web.TagShowController.tags(org.springframework.data.domain.Pageable,java.lang.Long,org.springframework.ui.Model)
+2020-10-21 12:31:32.268  INFO 13976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/types/{id}],methods=[GET]}" onto public java.lang.String com.lcy.web.TypeShowController.types(org.springframework.data.domain.Pageable,java.lang.Long,org.springframework.ui.Model)
+2020-10-21 12:31:32.270  INFO 13976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-21 12:31:32.270  INFO 13976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-21 12:31:32.326  INFO 13976 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-21 12:31:32.326  INFO 13976 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-21 12:31:32.341  INFO 13976 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2020-10-21 12:31:32.363  INFO 13976 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-21 12:31:32.943  INFO 13976 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-21 12:31:32.991  INFO 13976 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-10-21 12:31:33.037  INFO 13976 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2020-10-21 12:31:33.041  INFO 13976 --- [restartedMain] com.lcy.BlogApplication                  : Started BlogApplication in 6.348 seconds (JVM running for 8.082)
+2020-10-21 12:31:36.313  INFO 13976 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-10-21 12:31:36.313  INFO 13976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-21 12:31:36.334  INFO 13976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2020-10-21 12:31:40.135  INFO 13976 --- [http-nio-8080-exec-8] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 12:31:40.233  INFO 13976 --- [http-nio-8080-exec-8] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 12:33:22.457  INFO 13976 --- [http-nio-8080-exec-3] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.TagShowController.tags', args=[Page request [number: 0, size 6, sort: updateTime: DESC], -1, {}]}
+2020-10-21 12:33:22.471  WARN 13976 --- [http-nio-8080-exec-3] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [null.size]; use collection function syntax instead [size(null)].
+2020-10-21 12:33:22.709  INFO 13976 --- [http-nio-8080-exec-3] com.lcy.aspect.LogAspect                 : Result : tags
+2020-10-21 12:33:23.268  INFO 13976 --- [http-nio-8080-exec-3] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 12:33:23.275  INFO 13976 --- [http-nio-8080-exec-3] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 12:33:34.840  INFO 13976 --- [http-nio-8080-exec-9] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.ArchiveShowController.archives', args=[{}]}
+2020-10-21 12:33:34.954  INFO 13976 --- [http-nio-8080-exec-9] com.lcy.aspect.LogAspect                 : Result : archives
+2020-10-21 12:33:35.394  INFO 13976 --- [http-nio-8080-exec-9] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 12:33:35.400  INFO 13976 --- [http-nio-8080-exec-9] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 12:34:24.934  INFO 13976 --- [http-nio-8080-exec-10] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/2', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.blog', args=[2, {}]}
+2020-10-21 12:34:24.994  INFO 13976 --- [http-nio-8080-exec-10] com.lcy.aspect.LogAspect                 : Result : blog
+2020-10-21 12:34:25.550  INFO 13976 --- [http-nio-8080-exec-3] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 12:34:25.555  INFO 13976 --- [http-nio-8080-exec-3] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 12:34:25.631  INFO 13976 --- [http-nio-8080-exec-4] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/comments/2', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.CommentController.comments', args=[2, {}]}
+2020-10-21 12:34:25.667  INFO 13976 --- [http-nio-8080-exec-4] com.lcy.aspect.LogAspect                 : Result : blog :: commentList
+2020-10-21 12:34:25.695 ERROR 13976 --- [http-nio-8080-exec-9] c.l.handler.ControllerExceptionHandler   : Requst URL : http://localhost:8080/blog/$%7Bcomment.avatar，Exception : {}
+
+org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "${comment"
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:128)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:158)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:128)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1457)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NumberFormatException: For input string: "${comment"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:578)
+	at java.lang.Long.valueOf(Long.java:803)
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:211)
+	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:113)
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:468)
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:441)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:199)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:108)
+	at org.springframework.beans.TypeConverterSupport.doConvert(TypeConverterSupport.java:64)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:47)
+	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:713)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:120)
+	... 51 common frames omitted
+
+2020-10-21 12:34:25.696  WARN 13976 --- [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "${comment"
+2020-10-21 12:40:27.552  INFO 13976 --- [http-nio-8080-exec-6] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 12:40:27.562  INFO 13976 --- [http-nio-8080-exec-6] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 12:41:09.478  INFO 13976 --- [http-nio-8080-exec-8] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 12:41:09.485  INFO 13976 --- [http-nio-8080-exec-8] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 12:41:45.715  INFO 13976 --- [http-nio-8080-exec-10] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 12:41:45.719  INFO 13976 --- [http-nio-8080-exec-10] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 12:41:49.449  INFO 13976 --- [http-nio-8080-exec-7] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.ArchiveShowController.archives', args=[{}]}
+2020-10-21 12:41:49.463  INFO 13976 --- [http-nio-8080-exec-7] com.lcy.aspect.LogAspect                 : Result : archives
+2020-10-21 12:41:49.980  INFO 13976 --- [http-nio-8080-exec-7] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 12:41:49.984  INFO 13976 --- [http-nio-8080-exec-7] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 12:42:07.974  INFO 13976 --- [http-nio-8080-exec-2] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/12', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.blog', args=[12, {}]}
+2020-10-21 12:42:07.984  INFO 13976 --- [http-nio-8080-exec-2] com.lcy.aspect.LogAspect                 : Result : blog
+2020-10-21 12:42:08.465  INFO 13976 --- [http-nio-8080-exec-2] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 12:42:08.471  INFO 13976 --- [http-nio-8080-exec-2] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 12:42:08.611  INFO 13976 --- [http-nio-8080-exec-1] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/comments/12', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.CommentController.comments', args=[12, {}]}
+2020-10-21 12:42:08.613  INFO 13976 --- [http-nio-8080-exec-1] com.lcy.aspect.LogAspect                 : Result : blog :: commentList
+2020-10-21 12:43:03.328  INFO 13976 --- [http-nio-8080-exec-5] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 12:43:03.334  INFO 13976 --- [http-nio-8080-exec-5] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 12:43:28.360  INFO 13976 --- [http-nio-8080-exec-3] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 12:43:28.364  INFO 13976 --- [http-nio-8080-exec-3] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 12:43:32.592  INFO 13976 --- [http-nio-8080-exec-4] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.ArchiveShowController.archives', args=[{}]}
+2020-10-21 12:43:32.606  INFO 13976 --- [http-nio-8080-exec-4] com.lcy.aspect.LogAspect                 : Result : archives
+2020-10-21 12:43:33.044  INFO 13976 --- [http-nio-8080-exec-4] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 12:43:33.052  INFO 13976 --- [http-nio-8080-exec-4] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 12:43:38.706  INFO 13976 --- [http-nio-8080-exec-2] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 12:43:38.711  INFO 13976 --- [http-nio-8080-exec-2] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 12:43:52.986  INFO 13976 --- [http-nio-8080-exec-10] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 12:43:52.991  INFO 13976 --- [http-nio-8080-exec-10] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 12:43:54.983  INFO 13976 --- [http-nio-8080-exec-5] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.ArchiveShowController.archives', args=[{}]}
+2020-10-21 12:43:54.992  INFO 13976 --- [http-nio-8080-exec-5] com.lcy.aspect.LogAspect                 : Result : archives
+2020-10-21 12:43:55.447  INFO 13976 --- [http-nio-8080-exec-5] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 12:43:55.450  INFO 13976 --- [http-nio-8080-exec-5] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 12:44:17.439  INFO 13976 --- [http-nio-8080-exec-8] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/14', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.blog', args=[14, {}]}
+2020-10-21 12:44:17.448  INFO 13976 --- [http-nio-8080-exec-8] com.lcy.aspect.LogAspect                 : Result : blog
+2020-10-21 12:44:17.857  INFO 13976 --- [http-nio-8080-exec-8] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 12:44:17.860  INFO 13976 --- [http-nio-8080-exec-8] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 12:44:40.207  INFO 13976 --- [http-nio-8080-exec-9] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/13', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.blog', args=[13, {}]}
+2020-10-21 12:44:40.287  INFO 13976 --- [http-nio-8080-exec-9] com.lcy.aspect.LogAspect                 : Result : blog
+2020-10-21 12:44:40.765  INFO 13976 --- [http-nio-8080-exec-6] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 12:44:40.768  INFO 13976 --- [http-nio-8080-exec-6] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 12:44:40.854  INFO 13976 --- [http-nio-8080-exec-10] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/comments/13', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.CommentController.comments', args=[13, {}]}
+2020-10-21 12:44:40.855  INFO 13976 --- [http-nio-8080-exec-10] com.lcy.aspect.LogAspect                 : Result : blog :: commentList
+2020-10-21 12:44:49.588  INFO 13976 --- [http-nio-8080-exec-7] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/14', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.blog', args=[14, {}]}
+2020-10-21 12:44:49.596  INFO 13976 --- [http-nio-8080-exec-7] com.lcy.aspect.LogAspect                 : Result : blog
+2020-10-21 12:44:50.052  INFO 13976 --- [http-nio-8080-exec-7] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 12:44:50.058  INFO 13976 --- [http-nio-8080-exec-7] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 12:44:53.317  INFO 13976 --- [http-nio-8080-exec-5] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/12', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.blog', args=[12, {}]}
+2020-10-21 12:44:53.324  INFO 13976 --- [http-nio-8080-exec-5] com.lcy.aspect.LogAspect                 : Result : blog
+2020-10-21 12:44:53.737  INFO 13976 --- [http-nio-8080-exec-5] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 12:44:53.740  INFO 13976 --- [http-nio-8080-exec-5] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 12:44:53.816  INFO 13976 --- [http-nio-8080-exec-4] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/comments/12', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.CommentController.comments', args=[12, {}]}
+2020-10-21 12:44:53.821  INFO 13976 --- [http-nio-8080-exec-4] com.lcy.aspect.LogAspect                 : Result : blog :: commentList
+2020-10-21 12:45:57.766  INFO 13976 --- [http-nio-8080-exec-8] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 12:45:57.769  INFO 13976 --- [http-nio-8080-exec-8] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 12:46:15.733  INFO 13976 --- [http-nio-8080-exec-1] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 12:46:15.735  INFO 13976 --- [http-nio-8080-exec-1] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 12:46:21.943  INFO 13976 --- [http-nio-8080-exec-7] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.ArchiveShowController.archives', args=[{}]}
+2020-10-21 12:46:21.952  INFO 13976 --- [http-nio-8080-exec-7] com.lcy.aspect.LogAspect                 : Result : archives
+2020-10-21 12:46:22.400  INFO 13976 --- [http-nio-8080-exec-7] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 12:46:22.406  INFO 13976 --- [http-nio-8080-exec-7] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 12:50:43.634  INFO 13976 --- [http-nio-8080-exec-7] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 12:50:43.638  INFO 13976 --- [http-nio-8080-exec-7] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 12:50:57.052  INFO 13976 --- [http-nio-8080-exec-9] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 12:50:57.055  INFO 13976 --- [http-nio-8080-exec-9] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 12:53:34.491  INFO 13976 --- [http-nio-8080-exec-3] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 12:53:34.502  INFO 13976 --- [http-nio-8080-exec-3] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 13:16:24.108  INFO 13976 --- [http-nio-8080-exec-9] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 13:16:24.111  INFO 13976 --- [http-nio-8080-exec-9] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 13:24:47.160  INFO 13976 --- [http-nio-8080-exec-9] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 13:24:47.163  INFO 13976 --- [http-nio-8080-exec-9] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 13:25:27.467  INFO 13976 --- [http-nio-8080-exec-3] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 13:25:27.469  INFO 13976 --- [http-nio-8080-exec-3] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 13:25:32.442  INFO 13976 --- [http-nio-8080-exec-5] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.ArchiveShowController.archives', args=[{}]}
+2020-10-21 13:25:32.456  INFO 13976 --- [http-nio-8080-exec-5] com.lcy.aspect.LogAspect                 : Result : archives
+2020-10-21 13:25:33.595  INFO 13976 --- [http-nio-8080-exec-5] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 13:25:33.597  INFO 13976 --- [http-nio-8080-exec-5] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 13:25:39.417  INFO 13976 --- [http-nio-8080-exec-6] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/16', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.blog', args=[16, {}]}
+2020-10-21 13:25:39.508  INFO 13976 --- [http-nio-8080-exec-6] com.lcy.aspect.LogAspect                 : Result : blog
+2020-10-21 13:25:40.197  INFO 13976 --- [http-nio-8080-exec-2] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 13:25:40.200  INFO 13976 --- [http-nio-8080-exec-2] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 13:25:40.416  INFO 13976 --- [http-nio-8080-exec-1] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/comments/16', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.CommentController.comments', args=[16, {}]}
+2020-10-21 13:25:40.423  INFO 13976 --- [http-nio-8080-exec-1] com.lcy.aspect.LogAspect                 : Result : blog :: commentList
+2020-10-21 13:57:27.660  INFO 13976 --- [http-nio-8080-exec-10] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/16', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.blog', args=[16, {}]}
+2020-10-21 13:57:27.686  INFO 13976 --- [http-nio-8080-exec-10] com.lcy.aspect.LogAspect                 : Result : blog
+2020-10-21 13:57:28.307  INFO 13976 --- [http-nio-8080-exec-6] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 13:57:28.309  INFO 13976 --- [http-nio-8080-exec-6] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 13:57:29.085  INFO 13976 --- [http-nio-8080-exec-2] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/comments/16', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.CommentController.comments', args=[16, {}]}
+2020-10-21 13:57:29.087  INFO 13976 --- [http-nio-8080-exec-2] com.lcy.aspect.LogAspect                 : Result : blog :: commentList
+2020-10-21 13:57:39.673  INFO 13976 --- [http-nio-8080-exec-3] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 13:57:39.676  INFO 13976 --- [http-nio-8080-exec-3] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 13:57:42.312  INFO 13976 --- [http-nio-8080-exec-5] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 13:57:42.316  INFO 13976 --- [http-nio-8080-exec-5] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 13:57:51.277  INFO 13976 --- [http-nio-8080-exec-8] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.ArchiveShowController.archives', args=[{}]}
+2020-10-21 13:57:51.286  INFO 13976 --- [http-nio-8080-exec-8] com.lcy.aspect.LogAspect                 : Result : archives
+2020-10-21 13:57:51.745  INFO 13976 --- [http-nio-8080-exec-8] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 13:57:51.748  INFO 13976 --- [http-nio-8080-exec-8] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 13:57:59.739  INFO 13976 --- [http-nio-8080-exec-2] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 13:57:59.742  INFO 13976 --- [http-nio-8080-exec-2] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 14:03:54.042  INFO 13976 --- [http-nio-8080-exec-1] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 14:03:54.045  INFO 13976 --- [http-nio-8080-exec-1] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 14:04:01.116  INFO 13976 --- [http-nio-8080-exec-6] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 14:04:01.119  INFO 13976 --- [http-nio-8080-exec-6] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 14:04:03.882  INFO 13976 --- [http-nio-8080-exec-1] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 14:04:03.885  INFO 13976 --- [http-nio-8080-exec-1] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 14:19:14.759  INFO 2536 --- [restartedMain] com.lcy.BlogApplication                  : Starting BlogApplication on daobanWindows10 with PID 2536 (E:\IDEA_gzkj\JavaProjects\blog\target\classes started by young in E:\IDEA_gzkj\JavaProjects\blog)
+2020-10-21 14:19:14.760  INFO 2536 --- [restartedMain] com.lcy.BlogApplication                  : The following profiles are active: dev
+2020-10-21 14:19:15.192  INFO 2536 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@583c3f53: startup date [Wed Oct 21 14:19:15 CST 2020]; root of context hierarchy
+2020-10-21 14:19:17.629  INFO 2536 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2020-10-21 14:19:17.639  INFO 2536 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-21 14:19:17.640  INFO 2536 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2020-10-21 14:19:17.752  INFO 2536 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-21 14:19:17.752  INFO 2536 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2561 ms
+2020-10-21 14:19:17.897  INFO 2536 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-21 14:19:17.901  INFO 2536 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-21 14:19:17.902  INFO 2536 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-21 14:19:17.902  INFO 2536 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-21 14:19:17.903  INFO 2536 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-21 14:19:18.577  INFO 2536 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-10-21 14:19:18.600  INFO 2536 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-10-21 14:19:18.799  INFO 2536 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-10-21 14:19:18.800  INFO 2536 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-10-21 14:19:18.801  INFO 2536 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-10-21 14:19:18.863  INFO 2536 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-10-21 14:19:19.026  INFO 2536 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-10-21 14:19:19.696  INFO 2536 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2020-10-21 14:19:19.853  INFO 2536 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-21 14:19:20.437  INFO 2536 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-10-21 14:19:21.232  INFO 2536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@583c3f53: startup date [Wed Oct 21 14:19:15 CST 2020]; root of context hierarchy
+2020-10-21 14:19:21.297  INFO 2536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/about],methods=[GET]}" onto public java.lang.String com.lcy.web.AboutShowController.about()
+2020-10-21 14:19:21.301  INFO 2536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/{id}/delete],methods=[GET]}" onto public java.lang.String com.lcy.web.admin.BlogController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-10-21 14:19:21.302  INFO 2536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/search],methods=[POST]}" onto public java.lang.String com.lcy.web.admin.BlogController.search(org.springframework.data.domain.Pageable,com.lcy.vo.BlogQuery,org.springframework.ui.Model)
+2020-10-21 14:19:21.302  INFO 2536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/input],methods=[GET]}" onto public java.lang.String com.lcy.web.admin.BlogController.input(org.springframework.ui.Model)
+2020-10-21 14:19:21.302  INFO 2536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[POST]}" onto public java.lang.String com.lcy.web.admin.BlogController.post(com.lcy.po.Blog,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpSession)
+2020-10-21 14:19:21.302  INFO 2536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[GET]}" onto public java.lang.String com.lcy.web.admin.BlogController.blogs(org.springframework.data.domain.Pageable,com.lcy.vo.BlogQuery,org.springframework.ui.Model)
+2020-10-21 14:19:21.302  INFO 2536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/{id}/input],methods=[GET]}" onto public java.lang.String com.lcy.web.admin.BlogController.editInput(java.lang.Long,org.springframework.ui.Model)
+2020-10-21 14:19:21.303  INFO 2536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public java.lang.String com.lcy.web.admin.LoginController.loginPage()
+2020-10-21 14:19:21.304  INFO 2536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[POST]}" onto public java.lang.String com.lcy.web.admin.LoginController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-10-21 14:19:21.304  INFO 2536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/logout],methods=[GET]}" onto public java.lang.String com.lcy.web.admin.LoginController.logout(javax.servlet.http.HttpSession)
+2020-10-21 14:19:21.305  INFO 2536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}/delete],methods=[GET]}" onto public java.lang.String com.lcy.web.admin.TagController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-10-21 14:19:21.306  INFO 2536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/input],methods=[GET]}" onto public java.lang.String com.lcy.web.admin.TagController.input(org.springframework.ui.Model)
+2020-10-21 14:19:21.306  INFO 2536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags],methods=[GET]}" onto public java.lang.String com.lcy.web.admin.TagController.tags(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2020-10-21 14:19:21.306  INFO 2536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags],methods=[POST]}" onto public java.lang.String com.lcy.web.admin.TagController.post(com.lcy.po.Tag,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-10-21 14:19:21.306  INFO 2536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}/input],methods=[GET]}" onto public java.lang.String com.lcy.web.admin.TagController.editInput(java.lang.Long,org.springframework.ui.Model)
+2020-10-21 14:19:21.307  INFO 2536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}],methods=[POST]}" onto public java.lang.String com.lcy.web.admin.TagController.editPost(com.lcy.po.Tag,org.springframework.validation.BindingResult,java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-10-21 14:19:21.308  INFO 2536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}/delete],methods=[GET]}" onto public java.lang.String com.lcy.web.admin.TypeController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-10-21 14:19:21.309  INFO 2536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[GET]}" onto public java.lang.String com.lcy.web.admin.TypeController.types(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2020-10-21 14:19:21.309  INFO 2536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/input],methods=[GET]}" onto public java.lang.String com.lcy.web.admin.TypeController.input(org.springframework.ui.Model)
+2020-10-21 14:19:21.309  INFO 2536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[POST]}" onto public java.lang.String com.lcy.web.admin.TypeController.post(com.lcy.po.Type,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-10-21 14:19:21.309  INFO 2536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}/input],methods=[GET]}" onto public java.lang.String com.lcy.web.admin.TypeController.editInput(java.lang.Long,org.springframework.ui.Model)
+2020-10-21 14:19:21.310  INFO 2536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}],methods=[POST]}" onto public java.lang.String com.lcy.web.admin.TypeController.editPost(com.lcy.po.Type,org.springframework.validation.BindingResult,java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-10-21 14:19:21.312  INFO 2536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/archives],methods=[GET]}" onto public java.lang.String com.lcy.web.ArchiveShowController.archives(org.springframework.ui.Model)
+2020-10-21 14:19:21.313  INFO 2536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comments/{blogId}],methods=[GET]}" onto public java.lang.String com.lcy.web.CommentController.comments(java.lang.Long,org.springframework.ui.Model)
+2020-10-21 14:19:21.313  INFO 2536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comments],methods=[POST]}" onto public java.lang.String com.lcy.web.CommentController.post(com.lcy.po.Comment,javax.servlet.http.HttpSession)
+2020-10-21 14:19:21.314  INFO 2536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.lcy.web.IndexController.index(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2020-10-21 14:19:21.314  INFO 2536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search],methods=[POST]}" onto public java.lang.String com.lcy.web.IndexController.search(org.springframework.data.domain.Pageable,java.lang.String,org.springframework.ui.Model)
+2020-10-21 14:19:21.314  INFO 2536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog/{id}],methods=[GET]}" onto public java.lang.String com.lcy.web.IndexController.blog(java.lang.Long,org.springframework.ui.Model)
+2020-10-21 14:19:21.315  INFO 2536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/footer/newblog],methods=[GET]}" onto public java.lang.String com.lcy.web.IndexController.newblogs(org.springframework.ui.Model)
+2020-10-21 14:19:21.315  INFO 2536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tags/{id}],methods=[GET]}" onto public java.lang.String com.lcy.web.TagShowController.tags(org.springframework.data.domain.Pageable,java.lang.Long,org.springframework.ui.Model)
+2020-10-21 14:19:21.315  INFO 2536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/types/{id}],methods=[GET]}" onto public java.lang.String com.lcy.web.TypeShowController.types(org.springframework.data.domain.Pageable,java.lang.Long,org.springframework.ui.Model)
+2020-10-21 14:19:21.317  INFO 2536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-21 14:19:21.317  INFO 2536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-21 14:19:21.355  INFO 2536 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-21 14:19:21.355  INFO 2536 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-21 14:19:21.371  INFO 2536 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2020-10-21 14:19:21.402  INFO 2536 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-21 14:19:22.036  INFO 2536 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-21 14:19:22.077  INFO 2536 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-10-21 14:19:22.124  INFO 2536 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2020-10-21 14:19:22.128  INFO 2536 --- [restartedMain] com.lcy.BlogApplication                  : Started BlogApplication in 8.002 seconds (JVM running for 11.405)
+2020-10-21 14:19:30.782  INFO 2536 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-10-21 14:19:30.782  INFO 2536 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-21 14:19:30.806  INFO 2536 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2020-10-21 14:19:35.108  INFO 2536 --- [http-nio-8080-exec-4] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 14:19:35.238  INFO 2536 --- [http-nio-8080-exec-4] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 14:19:36.675  INFO 2536 --- [http-nio-8080-exec-1] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 14:19:36.680  INFO 2536 --- [http-nio-8080-exec-1] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 14:19:39.618  INFO 2536 --- [http-nio-8080-exec-4] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 14:19:39.626  INFO 2536 --- [http-nio-8080-exec-4] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 14:20:34.071  INFO 2536 --- [http-nio-8080-exec-6] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 14:20:34.076  INFO 2536 --- [http-nio-8080-exec-6] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 14:22:04.037  INFO 2536 --- [http-nio-8080-exec-3] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.ArchiveShowController.archives', args=[{}]}
+2020-10-21 14:22:04.064  INFO 2536 --- [http-nio-8080-exec-3] com.lcy.aspect.LogAspect                 : Result : archives
+2020-10-21 14:22:04.514  INFO 2536 --- [http-nio-8080-exec-3] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 14:22:04.521  INFO 2536 --- [http-nio-8080-exec-3] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 14:23:57.675  INFO 2536 --- [http-nio-8080-exec-7] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 14:23:57.679  INFO 2536 --- [http-nio-8080-exec-7] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 14:23:59.929  INFO 2536 --- [http-nio-8080-exec-10] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 14:23:59.935  INFO 2536 --- [http-nio-8080-exec-10] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 14:24:06.691  INFO 2536 --- [http-nio-8080-exec-2] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 14:24:06.698  INFO 2536 --- [http-nio-8080-exec-2] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 14:24:17.705  INFO 2536 --- [http-nio-8080-exec-6] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 14:24:17.709  INFO 2536 --- [http-nio-8080-exec-6] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-10-21 14:24:38.918  INFO 2536 --- [http-nio-8080-exec-1] com.lcy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lcy.web.IndexController.newblogs', args=[{}]}
+2020-10-21 14:24:38.922  INFO 2536 --- [http-nio-8080-exec-1] com.lcy.aspect.LogAspect                 : Result : _fragments :: newblogList

@@ -147,7 +147,7 @@ public class BlogServiceImpl implements BlogService {
     }
 
 
-    // 修改博客
+    // 新增博客
     @Transactional  // 开启事务
     @Override
     public Blog saveBlog(Blog blog) {
@@ -155,13 +155,17 @@ public class BlogServiceImpl implements BlogService {
             blog.setCreateTime(new Date());// 设置创建时间为当前时间
             blog.setUpdateTime(new Date());// 设置更新时间为当前时间
             blog.setViews(0);// 浏览次数为0
+
+            // 测试
+            System.out.println("测试测试：" + blog.getFlag());
+
         } else { // id存在则修改博客
             blog.setUpdateTime(new Date()); // 修改更改时间
         }
         return blogRepository.save(blog);   // 将临时对象实例化到数据库中，当id存在则修改，不存在则创建
     }
 
-    // 新增博客
+    // 修改博客
     @Transactional  // 开启事务
     @Override
     public Blog updateBlog(Long id, Blog blog) {
