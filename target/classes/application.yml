@@ -7,5 +7,5 @@ spring:
     basename: i18n/messages # 配置i18配置文件的路径，默认是放在resources下
 
 
-comment.avatar: /images/tx/tx1.jpg
+#comment.avatar: /images/tx/tx10.jpg
 

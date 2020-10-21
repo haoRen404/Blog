@@ -134,10 +134,10 @@ public class BlogServiceImpl implements BlogService {
     public Map<String, List<Blog>> archiveBlog() {
         List<String> years = blogRepository.findGroupYear();// 获取到倒序排序的年份list集合，大到小
 
-//        Map<String, List<Blog>> map = new HashMap<>();
-        Map<String, List<Blog>> map = new LinkedHashMap<>();
+        Map<String, List<Blog>> map = new HashMap<>();
+//        Map<String, List<Blog>> map = new LinkedHashMap<>();
         for(String year : years){
-            System.out.println("年份年份==" + year);
+//            System.out.println("年份年份==" + year);
             map.put(year, blogRepository.findByYear(year));// 根据年份查询出所有博客，并加入map中
         }
 

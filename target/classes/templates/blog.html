@@ -136,7 +136,7 @@
                 <a class="avatar">
                   <!--头像-->
                   <img src="https://hbimg.huabanimg.com/f8ade59327308c2794f4699a8859e61c1c15678b1f0b-3XeuZH_fw658/format/webp"
-                       th:src="@{${comment.avatar}}">
+                       th:src="@{/images/tx/tx1.jpg}" />
                 </a>
                 <div class="content">
                   <a class="author">
@@ -161,7 +161,7 @@
                   <div class="comment" th:each="reply:${comment.replyComments}"> <!--拿到二级评论，遍历-->
                     <a class="avatar">
                       <!--头像-->
-                      <img src="../static/images/lcy2.jpg" th:href="@{/static/images/lcy2.jpg}">
+                      <img src="../static/images/lcy2.jpg" th:src="@{/images/tx/tx1.jpg}">
                     </a>
                     <div class="content">
                       <a class="author">
