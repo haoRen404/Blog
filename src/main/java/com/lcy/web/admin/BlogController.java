@@ -65,7 +65,7 @@ public class BlogController {
     // 新增
     @GetMapping("/blogs/input")
     public String input(Model model) {
-        setTypeAndTag(model);// 初始化，，把分类、标签赋进去
+        setTypeAndTag(model);// 初始化，把分类、标签赋进去
         model.addAttribute("blog", new Blog()); // 新建博客对象，用来存储新增的博客内容
         return INPUT; // 跳转新增页面
     }
@@ -73,9 +73,9 @@ public class BlogController {
     // 编辑
     @GetMapping("/blogs/{id}/input")
     public String editInput(@PathVariable Long id, Model model) {// id是需要编辑的博客id
-        setTypeAndTag(model);// 初始化，把值赋进去
+        setTypeAndTag(model);// 初始化，把分类、标签值赋进去
         Blog blog = blogService.getBlog(id);// 查询出指定id的博客
-        blog.init();// 进行初始化
+        blog.init();// 进行初始化，拼接标签的id
         model.addAttribute("blog",blog);// 往前台传数据，把博客相关的信息初始化到页面上
         return INPUT;
     }

@@ -60,20 +60,46 @@
 			<scope>test</scope>
 		</dependency>
 
-<!--		Markdown 转 HTML-->
+		<!--Markdown 转 HTML-->
+<!--		<dependency>-->
+<!--			<groupId>com.atlassian.commonmark</groupId>-->
+<!--			<artifactId>commonmark</artifactId>-->
+<!--			<version>0.10.0</version>-->
+<!--		</dependency>-->
+<!--		<dependency>-->
+<!--			<groupId>com.atlassian.commonmark</groupId>-->
+<!--			<artifactId>commonmark-ext-heading-anchor</artifactId>-->
+<!--			<version>0.10.0</version> </dependency>-->
+<!--		<dependency>-->
+<!--		<groupId>com.atlassian.commonmark</groupId>-->
+<!--			<artifactId>commonmark-ext-gfm-tables</artifactId>-->
+<!--			<version>0.10.0</version>-->
+<!--		</dependency>-->
+		<!--引入atlassian（将markdown形式转成html格式的）-->
 		<dependency>
 			<groupId>com.atlassian.commonmark</groupId>
 			<artifactId>commonmark</artifactId>
-			<version>0.10.0</version>
+			<version>0.14.0</version>
 		</dependency>
+
+		<dependency>
+			<groupId>com.atlassian.commonmark</groupId>
+			<artifactId>commonmark-ext-gfm-tables</artifactId>
+			<version>0.14.0</version>
+		</dependency>
+
 		<dependency>
 			<groupId>com.atlassian.commonmark</groupId>
 			<artifactId>commonmark-ext-heading-anchor</artifactId>
-			<version>0.10.0</version> </dependency>
+			<version>0.14.0</version>
+		</dependency>
+
+
+		<!--Markdown 转 HTML 2-->
 		<dependency>
-		<groupId>com.atlassian.commonmark</groupId>
-			<artifactId>commonmark-ext-gfm-tables</artifactId>
-			<version>0.10.0</version>
+			<groupId>com.vladsch.flexmark</groupId>
+			<artifactId>flexmark-all</artifactId>
+			<version>0.50.42</version>
 		</dependency>
 	</dependencies>
 

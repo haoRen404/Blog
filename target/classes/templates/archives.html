@@ -36,7 +36,8 @@
   <!--中间内容-->
   <div class="m-container-small m-padded-tb-big">
     <div class="ui container">
-      <!--header-->
+
+      <!--头部-->
       <div class="ui top attached padded segment">
         <div class="ui middle aligned two column grid">
           <div class="column">
@@ -60,7 +61,7 @@
                    th:text="${#dates.format(blog.updateTime, 'MMMdd')}">10月1日</div>
             </span>
             <div class="ui orange basic left pointing label m-padded-mini " th:text="${blog.flag}">原创</div>
-<!--            <div class="ui orange basic left pointing label m-padded-mini ">原创</div>-->
+            <!--<div class="ui orange basic left pointing label m-padded-mini ">原创</div>-->
           </a>
         </div>
       </th:block>

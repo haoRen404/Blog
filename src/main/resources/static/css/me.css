@@ -5,6 +5,12 @@ body {
     background: url("https://hbimg.huabanimg.com/6eba810542f7aa5109c005f565f431d366e93e29185e2-5OkMSa_fw658/format/webp");
 }
 
+/*据说可以换行，好吧，还是不行*/
+/*article code {*/
+/*    white-space: normal;*/
+/*    word-break: break-all;*/
+/*}*/
+
 .m-padded-mini {
     padding: 0.2em !important;
 }

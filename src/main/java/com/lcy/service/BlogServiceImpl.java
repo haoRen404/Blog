@@ -6,6 +6,7 @@ import com.lcy.dao.BlogRepository;
 import com.lcy.po.Blog;
 import com.lcy.po.Type;
 import com.lcy.util.MarkdownUtils;
+import com.lcy.util.MdToHtmlUtils;
 import com.lcy.util.MyBeanUtils;
 import com.lcy.vo.BlogQuery;
 import org.springframework.beans.BeanUtils;
@@ -49,6 +50,7 @@ public class BlogServiceImpl implements BlogService {
         BeanUtils.copyProperties(blog, b);
         String content = blog.getContent();
         blog.setContent(MarkdownUtils.markdownToHtmlExtensions(content));// Markdown 转 HTML
+//        blog.setContent(MdToHtmlUtils.convert(content));// Markdown 转 HTML
 
         blogRepository.updateViews(id);// 每访问一次，浏览次数+1
 
