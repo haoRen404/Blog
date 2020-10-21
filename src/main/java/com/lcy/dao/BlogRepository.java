@@ -37,7 +37,8 @@ public interface BlogRepository extends JpaRepository<Blog, Long>, JpaSpecificat
 
     // 根据年份查询出所有博客
     // select * from t_blog b where date_format(b.update_time, '%Y') = '2020';
-    @Query("select b from Blog b where function('date_format',b.updateTime,'%Y') = ?1")
+//    @Query("select b from Blog b where function('date_format',b.updateTime,'%Y') = ?1")
+    @Query("select b from Blog b where function('date_format',b.updateTime,'%Y') = ?1 order by b.updateTime desc")
     List<Blog> findByYear(String year);
 
 }

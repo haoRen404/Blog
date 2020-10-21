@@ -130,11 +130,13 @@ public class BlogServiceImpl implements BlogService {
     // 归档，同一年的存放到一个list中，list存放在map中，年份是key，list是value
     @Override
     public Map<String, List<Blog>> archiveBlog() {
-        List<String> years = blogRepository.findGroupYear();// 获取到倒序排序的年份list集合
+        List<String> years = blogRepository.findGroupYear();// 获取到倒序排序的年份list集合，大到小
 
-        Map<String, List<Blog>> map = new HashMap<>();
+//        Map<String, List<Blog>> map = new HashMap<>();
+        Map<String, List<Blog>> map = new LinkedHashMap<>();
         for(String year : years){
-            map.put(year, blogRepository.findByYear(year));// 根据年份查询出所有博客
+            System.out.println("年份年份==" + year);
+            map.put(year, blogRepository.findByYear(year));// 根据年份查询出所有博客，并加入map中
         }
 
         return map;
@@ -155,10 +157,6 @@ public class BlogServiceImpl implements BlogService {
             blog.setCreateTime(new Date());// 设置创建时间为当前时间
             blog.setUpdateTime(new Date());// 设置更新时间为当前时间
             blog.setViews(0);// 浏览次数为0
-
-            // 测试
-            System.out.println("测试测试：" + blog.getFlag());
-
         } else { // id存在则修改博客
             blog.setUpdateTime(new Date()); // 修改更改时间
         }
