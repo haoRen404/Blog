@@ -41,7 +41,7 @@
         <div class="eleven wide column">
           <div class="ui segment">
 <!--            大图-->
-            <img src="https://hbimg.huabanimg.com/a3f8fd5e33d9aed81836922fcee4f4fc4d93f8067a39e-atpUdU_fw658/format/webp" alt="" class="ui rounded image">
+            <img src="../static/images/lcy3.jpg" th:src="@{/images/lcy3.jpg}" alt="" class="ui rounded image">
           </div>
         </div>
         <div class="five wide column">
@@ -67,13 +67,17 @@
             <div class="ui teal basic left pointing label m-margin-tb-tiny">...</div>
           </div>
           <div class="ui bottom attached segment">
-            <a href="#" th:href="#{about.github}" target="_blank" data-content="点击跳转GitHub" class="ui qq circular icon button"><i class="github icon"></i></a>
+            <a href="#" th:href="#{about.github}" target="_blank" data-content="访问GitHub" class="ui qq circular icon button"><i class="github icon"></i></a>
             <a href="#" class="ui wechat circular icon button"><i class="weixin icon"></i></a>
-            <a href="#" class="ui qq circular icon button" data-content="1756510828" data-position="bottom center"><i class="qq icon"></i></a>
+<!--            <a href="#" class="ui qq circular icon button" data-content="1756510828" data-position="bottom center"><i class="qq icon"></i></a>-->
+            <a href="#" th:href="#{about.csdn}" target="_blank" data-content="访问CSDN" class="ui qq circular icon button">
+              <img src="../static/images/tb/csdn.png" height="12px" th:src="@{/images/tb/csdn.png}" />
+            </a>
           </div>
 
           <div class="ui wechat-qr flowing popup transition hidden">
-            <img src="https://hbimg.huabanimg.com/8285d4eeae2e4b07368be57caade0232e78866ef9e76-AZoB67_fw658/format/webp" alt="" class="ui rounded image" style="width: 110px">
+            <!--微信图-->
+            <img src="../static/images/wechat.jpg" th:src="@{/images/wechat.jpg}" alt="" class="ui rounded image" style="width: 110px">
           </div>
           </div>
       </div>
