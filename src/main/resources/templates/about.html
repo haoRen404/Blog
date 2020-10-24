@@ -67,15 +67,24 @@
             <div class="ui teal basic left pointing label m-margin-tb-tiny">...</div>
           </div>
           <div class="ui bottom attached segment">
+            <!--GitHub-->
             <a href="#" th:href="#{about.github}" target="_blank" data-content="访问GitHub" class="ui qq circular icon button"><i class="github icon"></i></a>
+            <!--微信-->
             <a href="#" class="ui wechat circular icon button"><i class="weixin icon"></i></a>
-<!--            <a href="#" class="ui qq circular icon button" data-content="1756510828" data-position="bottom center"><i class="qq icon"></i></a>-->
+            <!--QQ-->
+            <!--<a href="#" class="ui qq circular icon button" data-content="1756510828" data-position="bottom center"><i class="qq icon"></i></a>-->
+            <!--CSDN-->
             <a href="#" th:href="#{about.csdn}" target="_blank" data-content="访问CSDN" class="ui qq circular icon button">
-              <img src="../static/images/tb/csdn.png" height="12px" th:src="@{/images/tb/csdn.png}" />
+              <img src="../static/images/tb/csdn.png" th:src="@{/images/tb/csdn.png}" height="12px" />
             </a>
+            <!--简历-->
+            <a href="/domload" data-content="下载简历" class="ui qq circular icon button">
+              <img src="../static/images/tb/jianli.png" th:src="@{/images/tb/jianli.png}" height="12px" />
+            </a>
+<!--            <a href="/domload">下载</a>-->
           </div>
 
-          <div class="ui wechat-qr flowing popup transition hidden">
+          <div class="ui id=”btn1“ wechat-qr flowing popup transition hidden">
             <!--微信图-->
             <img src="../static/images/wechat.jpg" th:src="@{/images/wechat.jpg}" alt="" class="ui rounded image" style="width: 110px">
           </div>
@@ -84,6 +93,7 @@
 
     </div>
   </div>
+
 
   <br>
   <br>
